@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>More template placeholders
+</h1>
+<p><span><span>This chapter contains additional details that may be useful for a designer who is creating a template for use in phpList.&#160;</span></span></p>
+<p><span>[SUBJECT]&#160;</span>
+</p>
+<p>[SUBJECT] adds the subject of the email within the newsletter text.
+</p>
+<h3>[CONTENT]&#160;<span>- a mandatory placeholder</span>
+</h3>
+<p>This is where the message's content (body) will be inserted. Every template must have a [CONTENT] placeholder&#160;
+</p>
+<h3>[FOOTER]
+</h3>
+<p>The message footer&#160;
+</p>
+<h3>
+</h3>
+<h3>[SIGNATURE]
+</h3>
+<p>[SIGNATURE] prints the phpList image signature.
+</p><strong>[FORWARDURL] </strong>
+<p>[FORWARDURL] is replaced with the personalised URL only. To use this, you will need to wrap it in HTML, like this:
+</p>
+<p>&lt;a href="[FORWARDURL]"&gt;Forward to a Friend&lt;/a&gt;
+  <br/></p>
+<p><strong>[PREFERENCESURL] </strong>
+</p>
+<p><span>[PREFERENCESURL] allows the recipient to edit their subscribe preferences, for example update their email or the number of your lists to which they below. This essentially allows them to maintain your list for you and is an valuable feature.&#160;</span>
+</p>
+<h3>[UNSUBSCRIBEURL] - a mandatory placeholder
+</h3>
+<p>[UNSUBSCRIBEURL] allows the recipient to totally unsubscribe from all your lists. In phpList you must include this placeholder somewhere in your body or footer. It is best to use this along side [PREFERENCESURL] if you manage multiple lists, so subscribers can leave just one list rather than all lists if they want.&#160;
+</p>
+<h3>[DOMAIN]<span class="Apple-tab-span"> </span>
+</h3>
+<p>Prints your domain, e.g. yourdomain.com<span>&#160;as listed in your configuration settings.</span>
+</p>
+<h3><span>[EMAIL]</span>
+</h3>
+<p>Prints the subscribers email address<span class="Apple-tab-span"> </span>&#160;
+</p>
+<h2>Some older placeholders </h2><p>These are some older placeholders which still work, but are not recommended for use:&#160;</p>
+<h3>[FORWARD]
+</h3>
+<p>[FORWARD] is a link where the recipient can go to &#8220;forward this message&#8221;. The default text for this placeholder is <strong>this link.</strong>
+</p>
+<p>Eg, if you use "If you want to forward this message to a friend click [FORWARD]", it will come out as:
+  <br/></p>
+<p><img src="/phplist/_edit/static/forward.png" alt=""/></p>
+<p><strong>[UNSUBSCRIBE]</strong></p>
+<p> Like Forward the link that subscribers can use to unsubscribe. It will also be replaced with "This Link", which means you can use it like this:
+</p>
+<p align="center">To unsubscribe from our newsletter click [UNSUBSCRIBE]
+</p>
+<p><strong>[PREFERENCES]</strong></p>
+<p> Like Forward and Unsubscribe the link that subscribers can use to update their personal details and preferences. It will also be replaced with "This Link", which means you can use it like this:
+</p>
+<p align="center">To change your preferences click [PREFERENCES]
+</p>
+<p>&#160;
+</p>
+<p>
+  <br/></p></body></html>

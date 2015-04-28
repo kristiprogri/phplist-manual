@@ -1,0 +1,128 @@
+.objavi-chapter{
+  color: #000;
+  display:none;
+} 
+
+a {
+  text-decoration:none;
+  color:#000;
+} 
+
+h1 .initial{
+  color: #000;
+  display:none;
+} 
+
+.objavi-subsection{
+  display: block;
+  page-break-before: always;
+} 
+
+body .objavi-subsection:first-child{
+  page-break-before: avoid;
+} 
+
+.objavi-subsection .initial {
+  color: #000;
+  display:none;
+} 
+
+.objavi-subsection-heading {
+  font-size: 20pt;
+  text-align: center;
+  line-height: 300px;
+  font-weight: normal;
+} 
+
+table {
+  float: none;
+} 
+
+h1.frontpage{
+  page-break-after:always;
+  margin-top:70%;
+  font-size: 20pt;
+  text-align: center;
+  page-break-before: avoid;
+  max-width: 700pt;
+  font-weight: normal;
+} 
+
+div.copyright{
+  padding: 1em;
+}
+/* TOC ******************************/
+table {
+  float: none;
+} 
+
+table.toc {
+  font-size: 1.1em;
+  width: 95%;
+} 
+
+table.toc td {
+  vertical-align:top
+  padding-left: 0.5em;
+} 
+
+td.chapter {
+  padding: 0 0.5em;
+  text-align: right;
+} 
+
+table.toc td.pagenumber {
+  text-align: right;
+  vertical-align:bottom;
+} 
+
+td.section {
+  padding-top: 1.1em;
+  font-weight: bold;
+}
+					
+/* End TOC **************************/ 
+img {
+   max-width: 500px;
+   height: auto;
+} 
+
+.objavi-no-page-break {
+   page-break-inside: avoid;
+} 
+
+.unseen {
+   z-index: -66;
+   margin-left: -1000pt;
+} 
+
+.objavi-subsection-heading{
+  height:860px;
+  font-size:0px;
+  display:block;
+}
+BODY, P {
+    font-family: Fontin_Sans;
+    font-size: 10pt;
+}
+H1 {
+    font-family: Fontin_Sans;
+    font-size: 14pt;
+    text-transform: uppercase;
+    font-weight: heavy;
+}
+H2 {
+    font-size: 12pt;
+    text-transform: uppercase;
+    font-weight: heavy;
+}
+H3 {
+    font-family: Fontin_Sans;
+    font-size: 10pt;
+    text-transform: uppercase;
+    font-weight: heavy;
+}
+PRE {
+    font-family: Courier;
+    font-size: 10pt;
+}

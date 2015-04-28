@@ -1,0 +1,82 @@
+</div><!-- #main-content -->
+
+
+		</div><!-- #main -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+		    <div class='wrap'>
+
+			
+<div id="supplementary">
+	<div id="footer-sidebar" class="footer-sidebar widget-area" role="complementary">
+
+		</div><!-- #footer-sidebar -->
+</div><!-- #supplementary -->
+			    <div id='footer-share'>
+			        <a href="http://twitter.com/phplist" target='_blank' class='ics sm twitter'></a>
+                    <a href="http://www.linkedin.com/company/phplist" target='_blank' class='ics sm linkedin'></a>
+                    <a href="http://youtube.com/phplist" target='_blank' class='ics sm youtube'></a>
+                    <a href="http://facebook.com/phplist" target='_blank' class='ics sm facebook'></a>
+                    <a href="http://plus.google.com/+phplist" target='_blank' class='ics sm google'></a>
+                </div>
+            <div class='copyright'>phpList is a registered limited company - © phpList 2000 - 2015<br />UK Company No. 07582966 - VAT Registration 122 0788 37</div>
+            </div>
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+ <script>
+	jQuery(document).ready(function(){
+        jQuery('#header-buttons li').click(function(){
+            jQuery('#header-buttons li').removeClass('active');
+            jQuery(this).addClass('active'); 
+        });
+        jQuery('#header-buttons li a').mouseover(function(){
+            jQuery('#header-buttons li').removeClass('active');
+        });
+        jQuery('.header-main').mouseleave(function(){
+            jQuery('#header-buttons li').removeClass('active');      
+        });
+
+        jQuery('.info').tooltip({position: {
+            my: "center bottom-20",
+            at: "center top",
+            using: function( position, feedback ) {
+                jQuery( this ).css( position );
+                jQuery( "<div>" )
+                .addClass( "arrow" )
+                .addClass( feedback.vertical )
+                .addClass( feedback.horizontal )
+                .appendTo( this );
+                }
+            }
+        });
+    });
+$(function() {
+    var uri =location.pathname.split("/")[2];
+  $('nav ul ul a[href^="' + uri + '"]').addClass('active');
+  $('nav ul ul a[href^="' + uri + '"]').parent().parent().addClass('active');
+  $('nav ul ul a[href^="' + uri + '"]').parent().parent().parent().addClass('active');
+});
+</script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setCookieDomain", "*.phplist.com"]);
+  _paq.push(["setDomains", ["*.phplist.com"]]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://phplist.piwikpro.com/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+</body>
+</html>

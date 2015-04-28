@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Creating a subscribe page
+</h1>
+<p>A subscribe page usually consists of a short form that a visitor to your website can fill out to subscribe themselves to one or more of your lists. Here is an example:
+</p>
+<p><img src="static/create_a_subscribe_page_in_phpList_9_1.png" alt="a simple subscribe page in phpList" height="445" width="600"/></p>
+<p>
+</p>
+<p>In the example above, the subscriber is asked to input their email address and to confirm it. They can then choose to receive a text version format and they can add their first and last names if they wish.&#160;
+</p>
+<p>In phpList you can have an unlimited number of pages, combining any set of Attributes, Lists and Languages.&#160;
+</p>
+<p>Additionally you can use pages in conjunction with scripts to create subscribe forms which integrate more closely with your website. As this is a custom-made process for individual sites we do not have generic documentation about it.
+</p>
+<h2>Create a page&#160;
+</h2>
+<p>To get started with your subscribe page visit&#160;<strong>Config </strong>&gt; <strong>Subscribe Pages</strong>.
+</p>
+<p><img src="static/create_a_subscribe_page_in_phpList_1.png" alt="config&gt; subscribe page on main menu" class="" height="400" width="465"/>&#160;
+</p>
+<p>Initially you'll find this page empty, with no subscribe pages to display, although there is a default subscribe page at www.yourdomain.com/lists.
+</p>
+<p>The first page you make will replace this default page and later you can set any page as default.
+  <br/></p>
+<p>To create a new page click<strong> Add a new subscribe page.</strong>
+</p>
+<p><img src="static/create_a_subscribe_page_in_phpList_2.png" alt="create a subscribe page phpList" height="250" width="435"/>&#160;
+</p>
+<p>This will open a page called <strong>EDIT A SUBSCRIBE PAGE</strong>.&#160;
+</p>
+<h2>Customize a Subscribe Page
+</h2>
+<p>The subscribe page editor is broken into four collapsible areas:
+</p>
+<p>
+</p>
+<ul><li><strong>General information</strong></li>
+  <li><strong>Transaction messages</strong></li>
+  <li><strong>Select the attributes to use&#160;</strong></li>
+  <li><strong>Select the lists to offer</strong></li>
+</ul><p>
+</p>
+<p><img src="static/create_a_subscribe_page_in_phpList_3.png" alt="structure of edit a subscribe page system phpList" height="276" width="330"/>&#160;
+</p>
+<p>These sections will guide you though creating a subscribe page which meets your specific needs.
+</p>
+<h2><strong>General information</strong>
+</h2>
+<p>The first box edits the titles and text on the page. Enter your title in the<strong> Title</strong> box first of all.
+</p>
+<p>You can leave <strong>Language file to use</strong> as <strong>--default</strong>, unless you are creating a page for a language other than the one you use for your installation, for example, if you are creating a multi-lingual system.
+</p>
+<p><img src="static/create_a_subscribe_page_in_phpList_4.png" alt="general information " height="465" width="373"/></p>
+<p>You can change the text in the intro too.
+</p>
+<p><img src="static/create_a_subscribe_page_in_phpList_4_1.png" alt="subscribe page introduction text" height="178" width="538"/>&#160;
+</p>
+<p>The <strong>Header</strong> and <strong>Footer</strong> dialogues are used for html editing, and the default&#160;code in them is taken from <strong>Config</strong> &gt; <strong>Settings</strong> &gt;&#160; <strong>subscription-ui settings</strong>. We will discuss this further in the Subscribe page design and configuration chapter.&#160;
+</p>
+<p>You can edit the text in the&#160;<strong>Thank you page </strong>and <strong>Text for button</strong> too, however, the standard texts are suitable for most situations so you may wish to just leave the defaults as they are.
+</p>
+<h2>General Information: HTML or Text
+</h2>
+<p>The last section of the general information sections is on <strong>HTML Email choice</strong>. It is very important and it directly affects the quality of your lists and the subscribe satisfaction.&#160;
+</p>
+<p>You can create a HTML email in phpList, with images and other design elements, and also a plain text version, with just text, no images, colours etc.&#160; Some subscribers prefer only text, they may want plain text for technical reasons, for example for compatibility with assistive software for a visual impairment, or it may simply be a personal preference.&#160;
+</p>
+<p>If you are planning on sending HTML messages you will want to avoid large numbers of your subscribers accidentally signing up for text only emails. You will have wasted time on a design they will never see and they may be less interested in your mails.
+</p>
+<p>It is therefore worth spending time on this section, deciding how you would like to present the text vs. HTML options.
+</p>
+<p>The default (as of version 3.0.11) is<strong> Offer checkbox for text</strong>, where the box defaults to unchecked on the subscribe page. This means your subscribers will have to manually choose to receive text emails, but the option is there for those who need/want it.&#160;
+</p>
+<p><img src="static/create_a_subscribe_page_in_phpList_5.png" alt="text v html emails on subscribe pages in phpList" height="233" width="353"/></p>
+<p><em>If you intend to send emails in HTML format it is best to make the "path of least resistance" be the signup for HTML. Many subscribers will ignore the box, or may not know what HTML vs. text means.</em>
+</p>
+<h2>Transaction messages
+</h2>
+<p>These are the messages sent to the Subscriber based on various actions, such as subscribe and unsubscribe. The defaults are taken from <strong>Config</strong> &gt; <strong>Settings</strong> &gt; <strong>transactional settings</strong>. It is possible to edit these, although the defaults are suitable for most situations.
+</p>
+<h2><strong>Select the attributes to use&#160;</strong>
+</h2>
+<p>This section allows you to choose which attributes, which personal/demographic data, you will ask for from your subscribers on the page.
+</p>
+<p>You might ask for generic information like name and city, or something more specific, like shoe size or hobbies. The use of attributes is described in the Attributes and Placeholders chapters.
+</p>
+<p>In this example we collected <strong>First Name</strong> and <strong>Last Name</strong> only and we did not make either of them <strong>required</strong>&#160;because many people do not wish to give out personal information. We had several other attributes to choose from.
+</p>
+<p><img src="static/create_a_subscribe_page_in_phpList_6.png" alt="attributes on subscribe pages phpList" height="483" width="564"/></p>
+<p>The <strong>Type: </strong>is defined in the attributes editor. The <strong>Default value</strong> can be different on each subscribe page if needed.
+</p>
+<p><em>Please note that if a customer does not change the <strong>Default value</strong>&#160;when they subscribe, whatever you set it as here will be added to your database.</em>
+</p>
+<h2><strong>Select the lists to offer</strong>
+</h2>
+<p>This final section allows you to select which lists to offer. &#160;
+</p>
+<p>If you select only one list, then the subscriber will not be given a choice. If you select multiple lists, then the subscriber will be able to select which lists they want to join. In this example we chose only one list.
+</p>
+<p><img src="static/create_a_subscribe_page_in_phpList_7.png" alt="which lists to offer on subscribe page" height="272" width="441"/>&#160;
+</p>
+<h2>Save your new page
+</h2>
+<p>Click the Save button at the end of the page when you are ready. You will be able to edit the page again later if you want to make a change.
+</p>
+<p>You will then be directed back to your Subscribe Pages list. We can now see one page.&#160;
+</p>
+<p><img src="static/create_a_subscribe_page_in_phpList_8.png" alt="save a subscribe page phpList" height="231" width="713"/></p>
+<h2>View your page
+</h2>
+<p>To view your new subscribe page page click the magnifying glass icon next to it on your <strong>subscribe pages</strong> list (<strong>Config</strong> &gt; <strong>Subscribe pages</strong> from the main menu).
+</p>
+<p><img src="static/create_a_subscribe_page_in_phpList_10.png" alt="view a subscribe page phpList" height="356" width="623"/></p>
+<p>
+</p>
+<p>Your page will look something like this:<span class="Apple-tab-span"> </span>
+</p>
+<p><img src="static/create_a_subscribe_page_in_phpList_9_1.png" alt="a subscribe page in phpList" height="445" width="600"/>&#160;
+</p>
+<p>
+</p>
+<h2>Use your page to add a subscriber as an admin&#160;
+</h2>
+<p>One additional functionality of the subscribe page view is to add a subscriber to your database quickly, without needing to go into the administrative interface. If you view the subscribe page while logged in as an adminiatartor, &#160;you will see an additional box:
+</p>
+<p><img src="static/create_a_subscribe_page_in_phpList_11.png" alt="using a subscribe page as an admin in phpList" height="370" width="698"/>&#160;
+</p>
+<p>
+</p>
+<p>This box allows you to add a subscriber by filling out the form on their behalf, and you can specify if you need to send them a confirmation request or not. This can be useful if you are talking to the new subscriber on the phone, for example.
+</p>
+<p>&#160;
+</p></body></html>

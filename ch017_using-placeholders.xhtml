@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Using placeholders
+</h1>
+<p>A place holder is a word in square brackets, for example
+</p>
+<p> [FIRSTNAME]
+</p>
+<p>or
+</p>
+<p>[UNSUBSCRIBE]&#160;
+</p>
+<p>which will be replaced with real data, for example the subscribers name or a unique URL, during sending.
+</p>
+<h2>Placeholders in phpList
+  <br/></h2>
+<p>There are three types of placeholder in phpList
+</p>
+<ul><li> System eg [UNSUBSCRIBE]</li>
+  <li>Config eg [WEBSITE]</li>
+  <li>Attribute eg [FIRSTNAME]</li>
+</ul><ul/><p><em>In this chapter we will deal with the Attribute placeholders only</em>. We will leave information on system and config placeholders to the templating and configuration chapters respectively.
+</p>
+<h2>Where to find a list of attribute placeholders
+</h2>
+<p>When composing a campaign, you can find a list of placeholders by clicking on the information symbol, <strong>i</strong>, next to the text <strong>Compose Message</strong>.
+</p>
+<p><img src="static/where_to_find_placeholders_list_phpList_2.png" alt="how to find a list of placeholders in phpList" width="423" height="314"/>&#160;
+</p>
+<p>Any <strong>Attribute</strong> placeholders will be listed here, along with some instructions on how to use them.
+</p>
+<p><img src="static/where_to_find_placeholders_list_phpList.png" alt="list of placeholders and attributes on compose tab " width="600" height="313"/></p>
+<p>These are generated directly from your attributes so if you wish to edit them, please see the Attributes chapter.&#160;
+</p>
+<h2>How to use a placeholder in a mail&#160;
+</h2>
+<p>To use a placeholder, you need to type it exactly as suggested in the information,<strong> i</strong>,&#160;box. This will include
+</p>
+<p>
+</p>
+<ul><li>an open square bracket</li>
+  <li>the placeholder name (in Capitals, with spaces)&#160;</li>
+  <li>and a close square bracket</li>
+</ul><p>
+</p>
+<p>It is also wise to use some <strong>fallback words</strong>, these are words that will be inserted in place of the data when the data is missing. You can indicate the <em>fallback words</em> with the double percent sign <strong>%%</strong>. Anything before the %% is the attribute placeholder. Everything after the %% is the fallback text. The fallback text is optional.
+  <br/></p>
+<p>In this example, the place holder would either print the subscribers <strong>first name</strong>, and where the name is not known, it will print the word <strong>Friends</strong>.
+</p>
+<p><img src="static/how_to_use_placeholders_1.png" alt=""/></p>
+<p>&#160;
+</p>
+<p><span>Testing a placeholder</span>
+</p>
+<p> It is important that you test your placeholder before you send your mail, as mistakes are ugly and disconcerting for your subscribers.
+</p>
+<h3>Set up two test accounts
+</h3>
+<p>To test your placeholder effectively you need:
+</p>
+<p>
+</p>
+<ul><li>one subscriber profile suitable for testing the attribute place-holder, using for example, an alternative email to which you have access, where the attribute data is completed</li>
+  <li>d another subscriber using another email you have access to, where the attribute data is not completed.</li>
+</ul><p>
+</p>
+<p>You may need to add some these emails or edit your existing data to achieve this. You can do all thesethings from the&#160;<strong>Search</strong>&#160;&gt;&#160;<strong>Search Subscribers</strong>&#160;page.
+</p>
+<p>In the example below I have subscribed myself to the system using my personal email (rather than my work email) and I have filled out my name.
+</p>
+<p><img src="static/testing_name_known.png" alt="subscriber profile with attribute data" width="671" height="199"/></p>
+<p>And I have another one using my old email address, where the attribute data has not been provided.
+</p>
+<p><img src="static/testing_name_not_known.png" alt="subscriber profile with not attribute data" width="663" height="196"/></p>
+<p>
+</p>
+<p><span>Send a test message</span>
+</p>
+<p>Next, enter the two test emails into the <strong>Send Test </strong>box at the bottom of your campaign <strong>Content </strong>page and press <strong>Send Test.</strong> You may need to confirm the emails if it is the first time you have used them.
+</p>
+<h3>Check the results
+</h3>
+<p>For the subscriber where the attribute related to the placeholder has data, you should see that data in the email. In this example you can see the name Anna is visible in the place of [FIRST NAME]
+</p>
+<p><img src="static/testing_name_known_outcome_1.png" alt="attribute working" width="600" height="421"/>&#160;
+</p>
+<p>Where the subscriber has no data for the attribute, you should see the <strong>Fallback Text</strong>. In this example that is the word <strong>Friends</strong>.
+</p>
+<p><img src="static/testing_name_not_known_outcome.png" alt="fallback text working in place of attribute" width="584" height="408"/>&#160;
+</p>
+<p>You can now send your campaign as usual.
+</p>
+<p>
+</p></body></html>

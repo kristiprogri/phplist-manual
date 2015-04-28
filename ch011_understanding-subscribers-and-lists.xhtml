@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Understanding Subscribers and Lists
+</h1>
+<p>It is important &#160;to understand the nature of Subscribers and Lists in phpList.&#160;
+</p>
+<h2>What is a subscriber?
+</h2>
+<p>A subscriber is <em>usually</em> someone who is a member of one or more of your lists. They may have subscribed themselves though a subscribe page, or you may have imported their details from another source.
+</p>
+<p> It is important to understand, however, that <em>a subscriber may not be on any list.</em> This happens when you:
+</p>
+<p>
+</p>
+<ul><li>Import subscribers but do not assign them list membership</li>
+  <li>Delete all the lists a subscriber was a member of (without deleting the subscriber)</li>
+  <ul><p>&#160;
+      <br/></p>
+  </ul></ul><p>
+</p>
+<p><span>What is a subscriber profile</span>
+</p>
+<div>
+  <p>All the data about a subscriber is stored in their subscriber profile.
+  </p>
+  <p>This profile can be found by searching for their email in <strong>Subscribers</strong> &gt; <strong>Search Subscribers</strong>. To see all subscribers search for <strong>@</strong>.
+  </p>
+  <p>Here are some examples of the kind of data held in a subscriber profile:
+  </p>
+  <p>On the <strong>Details</strong> page you can see information like ID, email address, confirmed or not, blacklisted or not, number of bounces and html or text emails. Some of this information is editable.
+  </p>
+  <p><img src="static/subscriber_profile_1.png" alt="subscriber details page phpList" height="395" width="600"/></p>
+  <p>By clicking on the <strong>Lists </strong>tab you can see the lists which the subscriber is a member of, and you can edit this too.
+  </p>
+  <p><img src="static/subscriber_profile_2.png" alt="phpList subscriber profile lists membership" height="364" width="639"/></p>
+  <p>By clicking on the <strong>History </strong>button you can see all the campaigns that have been sent to the subscriber.
+  </p>
+</div>
+<p><img src="static/subscriber_profile_3.png" alt="subscriber profile campaigns history" height="276" width="600"/></p>
+<p>By clicking on the numbers in the <strong>CLICKS </strong>column you can see detailed information about which images and text links they clicked on, when and how often.&#160;
+</p>
+<p><img src="static/subscriber_profile_4_1.png" alt="phpList subscriber details click statistics" height="265" width="600"/></p>
+<p>
+</p>
+<p>As you can see, the subscriber profile is the central place where all information about a subscriber is stored. This is very different to list membership.
+</p>
+<h2>What is a list?&#160;
+</h2>
+<p>A list is a way of grouping together subscribers so you can send them campaigns. However the list itself does not contain the subscriber details. As you have seen, all that information is in the subscriber profile.
+</p>
+<p>You can view your lists by going to <strong>Subscribers </strong>&gt; <strong>Subscriber lists</strong> from the main menu. Next to each list is the number of<strong> MEMBERS </strong>that list has.
+</p>
+<p><img src="static/list_1.png" alt="phpList Lists page" height="414" width="600"/>&#160;
+</p>
+<p>However, if I delete the list, I have not deleted the subscribers.&#160;
+</p>
+<p><span>Some examples of how this works in practice&#160;</span>
+</p>
+<p>A useful tool to help understand lists and subscribers is the <strong>All subscribers</strong> feature, which was added in version 3.0.8. When this feature is enabled (in the config.php file) you can see the total number of subscribers shown alongside your lists.
+</p>
+<p>Let's do some experiments with adding and deleting lists to see what happens to the <strong>All Subscribers</strong> total.
+</p>
+<p>At the start of our test, the number stands at <strong>5327</strong>. That means we have 5327 subscriber profiles in our system all together.
+</p>
+<p><img src="static/list_2.png" alt="phpList see All subscribers" height="348" width="464"/></p>
+<p>If we create a new list, and paste in the emails of some of our subscribers, &#160;we can add these subscribers to the list and send Campaigns to just a sub-section of our total number of subscribers.
+</p>
+<p><img src="static/list_3.png" alt="import emails" height="337" width="260"/>&#160;
+</p>
+<p>The outcome is a new list (in this example with <strong>662</strong> members). However, you can see that the <strong>All subscribers</strong> total stays at&#160;<strong>5327</strong>. This is because&#160;we have not added any new subscribers, we have just created a list out of current subscribers.
+</p>
+<p><img src="static/list_4.png" alt="lists page" height="346" width="441"/>&#160;
+</p>
+<p>Now, if we delete the new list with its <strong>662</strong> members,
+</p>
+<p><img src="static/list_5.png" alt="delete a list" height="130" width="555"/>&#160;
+</p>
+<p>the <strong>All subscribers</strong> count does not go down either, it is still&#160;<strong>5327.</strong>
+</p>
+<p> <img src="static/list_6.png" alt="delete a list does not delete subscribers" height="421" width="456"/>&#160;
+</p>
+<p>We can repeat this test, but this time add a mixture of current subscribers (<strong>2</strong>) and new subscribers whose data we have never introduced to phpList before (<strong>8</strong>). You can see phpList processes all the lines, imports <strong>8</strong> new emails to the system and marks <strong>2</strong> as duplicates.&#160;
+</p>
+<p><img src="static/list_7.png" alt="import" height="242" width="469"/>&#160;
+</p>
+<p><em>All of these emails are added to our new list,</em> and additionally, our <strong>All subscribers</strong> count goes up by 8 subscribers to <strong>5335.</strong>&#160;
+</p>
+<p><img src="static/list_8.png" alt="importing to all subscribers" height="451" width="581"/>&#160;
+</p>
+<p>We have added<strong> </strong>8 new subscribers to the system, and phpList has created 8 new subscriber profiles for us. If we delete our new list again...
+</p>
+<p><img src="static/list_9.png" alt="delete a list does not delete subscribers" height="154" width="530"/>&#160;
+</p>
+<p>The List is deleted, however the subscriber count stays at <strong>5335. </strong>We have only deleted a list, we have not deleted any subscribers.
+</p>
+<p><img src="static/list_10.png" alt="phpList all subscribers" height="399" width="519"/>&#160;
+</p>
+<h2>How to delete subscribers
+</h2>
+<p><em>You should not delete subscribers in most circumstances.&#160;</em>If a subscriber wants to stop receiving emails from you they can unsubscribe. Unsubscription means that:
+</p>
+<p>
+</p>
+<ul><li>Their email will be kept on the system and added to a do-not-send list (blacklist)</li>
+  <li>Your phpList system will<em> never</em> send a campaign to them again, unless they re-subscribe</li>
+  <li>If you import their email again (by accident) you will not be able to send them campaigns inadvertently</li>
+  <li>You have a record of when/why they unsubscribed which you can use to improve your campaigns in the future</li>
+</ul><p>
+</p>
+<p>If you are in a situation where you want to delete some subscribers rather than simply blacklist them, for example, to bring the size of your lists down, first try the options on the <strong>Reconcile </strong>page, for example to remove those with x number of bounces, those with an invalid email and those who are not-confirmed.
+</p>
+<p>The final resort is to get some emails by exporting them (from <strong>Export subscribers</strong>) and then pasting whichever emails you wish to delete into the bulk delete function. This can be found though the <strong>Manage Subscriber </strong>page.&#160;
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p></body></html>

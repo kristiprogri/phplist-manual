@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Templates
+</h1>
+<p>The templating system in phpList is designed to create a workflow that keeps things simple for the campaign creator.
+</p>
+<h2>The Templating Workflow
+  <br/></h2>
+<p>There are two elements to the workflow.
+</p>
+<ol><li>Creating and uploading a template: this is done very rarely.</li>
+  <li>Choosing and using the template: this is done for every campaign.</li>
+</ol><p>Step one is the "difficult" part of the templateing system. If you are unfamiliar with web-development, you may wish to get help from your/a web designer or system administrator.
+  <br/></p>
+<p>The second part of the workflow is very simple. The campaign composer/editor simply selects the template, by name, from a drop-down menu after the campaign message is written. The template is applied during sending, like a wrapper. The campaign composer/editor does not come into contact with the template code at all.
+  <br/></p>
+<p>The template is <em>not</em> applied to emails sent to subscribers who request a plain-text email.
+  <br/></p>
+<p><span><img src="static/infographic_idea_1.png" alt=""/><br/></span>
+</p>
+<p>In this chapter we will use the phpList announcements system template as an example.
+  <br/></p>
+<h2>Creating your template
+</h2>
+<h3>
+</h3>
+<p> There are lots of ways you might create your template.
+</p>
+<ul><li>You might design and write your own</li>
+  <li>Pay someone to do this for you
+  <br/></li>
+  <li>Modify a generic/open source template that you have bought or "recycled"</li>
+</ul><p>Here are some tips to help you set up your template for use with phpList.
+</p>
+<h3>The Basics
+  <br/></h3>
+<p>You should use inline styles, and, unless you have configured phpList especially with a plugin, <em><strong>you should use a single column template.</strong></em>
+</p>
+<p>If you choose a responsive template, your campaign editor should not use images with a width larger than a smartphone screen (320px, 480px).
+</p>
+<h3>Logo: upload or remote link?
+</h3>
+<p>When you are designing or modifying your template, you must decide if you wish to include your logo in the mails as an attachment or not. If you include your logo as an attachment <em>it will always display</em> to the recipient.
+</p>
+<p><img src="static/image_included.png" alt=""/><br/></p>
+<p>If you use a remote link, the image<em> will only display when the subscriber gives permission </em>in most email clients.
+</p>
+<p><img src="static/image_remote_blocked.png" alt=""/>&#160;
+</p>
+<p> If you decide you upload you image then a local link (or just a "broken link") when designing your template. You will then be promoted to upload the image when you are adding your template to phpList
+</p>
+<h3>A Mandatory placeholder in the body
+  <br/></h3>
+<p>You must include some strings that phplist will replace during the sending stage.
+</p>
+<h3>[CONTENT]
+  <br/></h3>
+<p>The obligatory string is [CONTENT]. This will be replaced with the content that you will write in the text editor when you create a campaign.
+</p>
+<p><img src="static/content_placeholder.png" alt=""/><br/></p>
+<h2>Adding your template to phpList
+</h2>
+<p>To add a template to phpList, go <strong>Campaigns</strong> &gt; <strong>Manage campaign templates</strong> from the main menu.
+</p>
+<p><img src="static/phpList_add_a_template.png" alt=""/><br/></p>
+<p>You will then see a list of templates already in the system, by default there is one template, the system template (which styles things like the confirm subscription emails).
+</p>
+<p><img src="static/phpList_add_a_template_2.png" alt=""/><br/></p>
+<p>Click<strong> Add new template</strong>.
+  <br/></p>
+<p><img src="static/phpList_add_a_template_3.png" alt=""/><br/></p>
+<p>First, give your template a Title. This will display in the list of templates to choose from during the campaign composition stage, so it is important that the name makes sense from the perspective of the person writing the campaigns.
+</p>
+<p>To add your template you can paste the html into the editor, or upload it as a file. In this example we are uploading it. Click the <strong>Browse</strong> button, locate the template file on your computer and click <strong>Open</strong>. The file name will then appear next to the Browse button, as is shown in the image above.
+</p>
+<p>Scroll to the bottom of the page and click <strong>Save changes</strong>, using the checking tools if you wish.
+</p>
+<h2><img src="/phplist/_edit/static/phpList_add_a_template_4.png" alt=""/></h2>
+<p>The next screen gives you an opportunity to upload your template images, if you have any. This will usually be a logo. In this case the logo is hosted remotely and so no image is listed to upload.
+</p>
+<p><img src="static/add_image.png" alt=""/></p>
+<p>Click <strong>Save images</strong>.
+</p>
+<p>Your template will now be added to your list of <strong>Exiting templates</strong>. If you wish to set this template as the default for all campaigns, you can check the radio button under <strong>CAMPAIGN DEFAULT</strong>.
+  <br/></p>
+<p><img src="static/template_list_1.png" alt=""/>&#160;
+  <br/></p>
+<h2>Using a template
+</h2>
+<p> During campaign composition, use headings and other formatting as normal. You do not need to apply any additional styling such as text colour, if those elements are dealt with by your template.
+</p>
+<p><img src="static/pre-template_phplist.png" alt=""/></p>
+<p>In the third tab,<strong> Format</strong>, of the send campaign workflow, select your template from the <strong>Use template</strong> dropdown.
+  <br/></p>
+<p><img src="static/choose_template_phplist_1.png" alt=""/>&#160;
+  <br/></p>
+<p>The template, and themeing, is then applied during sending.
+</p>
+<p><img src="static/post-template_phplist.png" alt=""/></p>
+<h2>Setting up some defaults
+</h2>
+<p>There are some default settings for templates and footers at <strong>Config</strong> &gt; <strong>Settings</strong> under <strong>campaign settings</strong>.&#160;
+</p>
+<p><img src="static/config_settings_templates.png" alt=""/><br/></p>
+<p>
+</p></body></html>

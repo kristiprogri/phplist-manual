@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/><link href="objavi.css" type="text/css" rel="stylesheet"/></head><body><h1>Setting up your Cron
+</h1>
+<h2> CRON
+  <br/></h2>
+<p>I said earlier to ignore the CRON job settings but once you've installed phpList, at least with the auto-installers, you should receive an email with details of what you have done. The one I get gives me all the details on the database, the user, password as well as the CRON job it needs to process the queue once a day which should allow you to set the cron job on your hosting control panel and concentrate on customising the look of your phpList installation and in due course, your newsletter and campaigns.
+</p>
+<p>&#160;Example of a CRON job sent to me:
+</p>
+<p>php -q /home/[USERNAME]/public_html/test/lists/admin/index.php -pprocessqueue -c/home/[USERNAME]/public_html/test/lists/config/config.php &gt;/dev/null
+</p>
+<p>Where [USERNAME] is my username for my hosting/web space so change this to your own username. You may also need to use www instead of (or as well as) public_html, you'll need to check out your own server paths. If you have access to FTP you'll see what to use when browsing your site.
+  <br/></p>
+<p>Note, there is no guarantee that this will work for you on your server, you'll need to consult your hosts' FAQ's regarding cron jobs.
+  <br/></p>
+<br/><p>&#160;
+</p></body></html>

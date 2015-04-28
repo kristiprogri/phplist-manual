@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/><link href="objavi.css" type="text/css" rel="stylesheet"/></head><body><h1>Installation
+  <br/></h1>
+<p>This chapter describes two methods of Installation: manual and using an automated tool.
+</p>
+<h2>Manual installation
+</h2>
+<p>phpList lives in it's own folder called "lists." Manual installation follows these steps:
+</p>
+<ul><li>Download and unpack phpList</li>
+  <li>Upload to your server using FTP</li>
+  <li>Create a database</li>
+  <li>Add the database details to the config.php file</li>
+  <li>Configure using web-interface.
+  <br/></li>
+</ul><h2>Download and unpack phpList
+  <br/></h2>
+<p> First download the latest version of phpList from <a href="http://www.phplist.com/download">http://www.phplist.com/download</a> by clicking either <strong>Download ZIP</strong> or <strong>Download TGZ</strong>
+  <br/></p>
+<p><img src="static/phpList_download_1.png" alt=""/>&#160;
+</p>
+<p>The link will take you to Sourceforge, where your download will begin after a few seconds - you may be asked to click <strong>Save</strong> before the download starts.
+  <br/></p>
+<p> Once you have downloaded phpList to your computer, unpack it to a temporary folder. You can usually do this by right clicking and choosing "extract here" (is this the same in windows/mac?)
+</p>
+<p><img src="static/phpList_extract_here.png" alt=""/></p>
+<h2>Upload to your server using ftp
+</h2>
+<p>Start your favourite FTP program, in this case we are using FileZilla.
+</p>
+<p>Browse though to your temporary folder in the FTP program, then open the public_html folder to find the lists folder.
+</p>
+<p><img src="static/navigate_to_extracted_phplist.png" alt=""/>&#160;
+</p>
+<p>Upload this folder (/lists/) into your public_html file on your server. This folder will probably have lots of files in already, for example, in the image below you can see the public_html folder on the server contains folders for a WordPress site.
+  <br/></p>
+<p><img src="static/phpList_upload_lists_1.png" alt=""/>&#160;
+  <br/></p>
+<h2>Grab a Coffee!
+</h2>
+<p>This upload will take some time, you may even have to split it over a number of partial uploads depending on your connection speed, time outs and upload limits.
+  <br/></p>
+<p><img src="static/phpList_uploaded_lists.png" alt=""/>&#160;
+</p>
+<p>
+</p>
+<h2>Create a database using your control panel
+  <br/></h2>
+<p>
+  <br/>Once you have uploaded the <strong>lists</strong> directory, go to your hosting control panel and create a database. If you need help, your web hosting company can help you with this.
+</p>
+<p>The process below provides an example, this may or may not be similar to the way you will create a new database on your server - this depends on which software your hosting company uses. Whatever the process, you will always end up with three things:
+</p>
+<ul><li>A database name, for example cl52-phplist</li>
+  <li>A database username, for example phplist</li>
+  <li>A password for your database, for example T!LcDaM/4</li>
+</ul><h3>An example of creating a database
+  <br/></h3>
+<p>
+</p>
+<p>First type in the new database name, we used the name phpList, and enter or generate a strong password. <em>Make sure you keep a copy of these details</em>!
+</p>
+<p><strong/>
+</p>
+<p><img src="static/database_1_1.png" alt=""/></p>
+<p>This system creates a user automatically, where the username is the same as the database name (a common preference). You may need to add a new user seperately and you may also need to allocate this user to your database.
+</p>
+<p><img src="static/new_database_1.png" alt=""/>&#160;
+</p>
+<h2>Edit the Config.php File
+</h2>
+<p>
+  <br/>Next, you need to put the details of your new database into your configuration file.
+  <br/></p>
+<p>Browse to your temp folder on your computer and go<strong> lists </strong>&gt; <strong>config </strong>&gt;<strong> config.php</strong>. Load and edit this file in a <em>text editor</em>, such as Notepad (windows) TextEdit (mac) or Geany/Kate/Geddit (linux).
+  <br/></p>
+<p><img src="static/edit_config.png" alt=""/><br/></p>
+<p> <em>Never </em> use a word processor program (like Microsoft Word).
+  <br/><br/>Your freshly downloaded config.php should look something like this:
+</p>
+<p><img src="static/config_phpList_1.png" alt=""/><br/></p>
+<p>There are four places where you need to replace the word in "quotes" at the end of a line of code with something specific to your server:
+  <br/></p>
+<h3># what is your Mysql database server hostname
+  <br/>$database_host = "localhost";
+</h3>
+<p>If you do not know what to enter here, you will either need to use trial and error, or ask your hosting provider what to put here. <em>If you want to keep things simple, ask your hosting provider. </em>
+</p>
+<p><strong>Trial and error:</strong> You may be lucky in that your server allows "<strong>localhost</strong>" for your $database_host entry,&#160; in which case you don't need to make a change. The second option to try is "127.0.0.1".
+</p>
+<p>If these fail you will receive an error towards the end of installation, when If both of these fail then this entry must be something specific to your server. GoDaddy and 1&amp;1 servers are pretty specific, for example.
+  <br/></p>
+<p># what is the name of the database we are using
+  <br/>$database_name = "phplistdb";
+</p>
+<p>Replace the<strong> phplistdb</strong> with the name of your database that you setup earlier.&#160;
+</p>
+<h3>
+</h3>
+<h3># what user has access to this database
+  <br/>$database_user = "phplist";
+</h3>
+<p>Replace the<strong> phplist</strong> with the name of your databse user you setup earlier (this may be the same name as your database).
+</p>
+<h3># and what is the password to login to control the database
+  <br/>$database_password = 'phplist';
+</h3>
+<p>Replace the <strong>phplist</strong> with the password you created.
+</p>
+<p><img src="static/phpList_initial_config.png" alt=""/>&#160;
+</p>
+<h2>("TEST",0)
+</h2>
+<p>One other thing you will need to do at one point in the future is change the value of <strong>TEST</strong> in this file. Until this point your install is essentially in "sandbox" mode, and will not fully functions.
+</p>
+<p>By default test is defined ("TEST",1). Change this to define ("TEST",0) to be able to send messages out.
+</p>
+<p>This is done automatically in the auto installers.
+</p>
+<h2>Config_extended.php
+</h2>
+<p>You may need to add some extra lines to your config.php. These extra lines are ready-made for you in config_extended.php, which is in the same directory as config.php. Simply copy the lines you need and paste them below the others you have changed in the previous section.
+</p>
+<h2>Save and upload
+</h2>
+<p> Once you have edited the config.php file you need to save it and upload this new version to your server.
+</p>
+<p>This can be done in the same way as your initial upload: open your ftp client, find the <strong>lists/config/config.php</strong> file on your pc and then upload it to <strong>lists/config/config.php</strong> on your server.
+</p>
+<h2>Go to your installation
+</h2>
+<p>Open your web browser and go to your installation. This is located at <strong>www.mywebsite.co.uk/lists/admin.</strong>
+</p>
+<p>If you get an error saying that the database has not connected, then check your config.php file again: a tiny error such as a space before/after a your database name/password will stop this from working.
+</p>
+<p>When you see the grey and black interface with the phpList logo at the top, you are in the right place.
+</p>
+<p><img src="static/go_to_install.png" alt=""/><br/></p>
+<h2>The final steps<del>
+  <br/></del>
+</h2>
+<p> Click <strong>Initialise Database</strong> and fill out the form.
+</p>
+<p><img src="static/Initialise_database_phpList.png" alt=""/><br/></p>
+<p>&#160;Click <strong>Continue</strong><img src="/phplist/_edit/static/final_steps_phpList.png" alt=""/></p>
+<ul><li>If you would like to email phpList to let them know you are using the software, click <strong>Tell us about it</strong>.
+  <br/></li>
+  <li>If you would like to sign up to receive email announcements about new versions of phpList <em>RIGHT click </em><strong>Subscribe to the announcements list</strong>.</li>
+</ul><h2>You're done!
+</h2>
+<p>You have now finished installation, the next step is configuration.
+</p>
+<p><img src="static/configuration.png" alt=""/><br/></p>
+<p>
+  <br/></p></body></html>
