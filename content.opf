@@ -1,0 +1,511 @@
+<package xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="primary_id">
+  <metadata>
+    <dc:publisher>FLOSS Manuals http://flossmanuals.net</dc:publisher>
+    <dc:rights>GPLv2+</dc:rights>
+    <dc:language>en</dc:language>
+    <dc:creator>The Contributors</dc:creator>
+    <dc:title>phpList</dc:title>
+    <dc:date opf:event="start">2014-07-15</dc:date>
+    <dc:date opf:event="last-modified">2015-04-27</dc:date>
+    <dc:date opf:event="published">2015-04-27</dc:date>
+    <dc:identifier id="primary_id">http://booki.flossmanuals.net/phplist/2015.04.27-10.49</dc:identifier>
+  </metadata>
+  <manifest>
+    <item href="static/list_9.png" id="att110_list_9" media-type="image/png"/>
+    <item href="static/wrapper.jpg" id="att404_wrapper" media-type="image/jpeg"/>
+    <item href="static/creating_lists_in_phpList_4.png" id="att230_creating_lists_in_phpList_4" media-type="image/png"/>
+    <item href="static/import_subscribers_from_prestashop_to_phpList_3.png" id="att335_import_subscribers_from_prestashop_to_phpList_3" media-type="image/png"/>
+    <item href="static/format.png" id="att256_format" media-type="image/png"/>
+    <item href="static/phpList_config_done.png" id="att262_phpList_config_done" media-type="image/png"/>
+    <item href="static/access_stats_from_stats_overview_page.png" id="att036_access_stats_from_stats_overview_page" media-type="image/png"/>
+    <item href="ch017_using-placeholders.xhtml" id="ch017_using-placeholders" media-type="application/xhtml+xml"/>
+    <item href="static/attribute_selection_2.png" id="att172_attribute_selection_2" media-type="image/png"/>
+    <item href="static/gov_email_pdf.png" id="att259_gov_email_pdf" media-type="image/png"/>
+    <item href="ch041_bounce-management.xhtml" id="ch041_bounce-management" media-type="application/xhtml+xml"/>
+    <item href="static/attributes_created_from_dataset_1.png" id="att179_attributes_created_from_dataset_1" media-type="image/png"/>
+    <item href="static/plugins_link.png" id="att052_plugins_link" media-type="image/png"/>
+    <item href="static/phpList_import_emails_3.png" id="att219_phpList_import_emails_3" media-type="image/png"/>
+    <item href="static/phpList_import_emails_19.png" id="att205_phpList_import_emails_19" media-type="image/png"/>
+    <item href="static/broad_way_world_homepage.png" id="att325_broad_way_world_homepage" media-type="image/png"/>
+    <item href="static/broad_way_world_signup_1.png" id="att324_broad_way_world_signup_1" media-type="image/png"/>
+    <item href="static/list_4.png" id="att115_list_4" media-type="image/png"/>
+    <item href="static/segementation_import_emails_paste.png" id="att137_segementation_import_emails_paste" media-type="image/png"/>
+    <item href="static/phpList_config_reporting_settings_2.png" id="att271_phpList_config_reporting_settings_2" media-type="image/png"/>
+    <item href="static/subscriber_profile_3.png" id="att121_subscriber_profile_3" media-type="image/png"/>
+    <item href="ch002_case-studies.xhtml" id="ch002_case-studies" media-type="application/xhtml+xml"/>
+    <item href="static/uni_group_twitter_1_1.png" id="att336_uni_group_twitter_1_1" media-type="image/png"/>
+    <item href="static/organisation.jpg" id="att191_organisation" media-type="image/jpeg"/>
+    <item href="static/set_up_remote_processing_from_phplistdotcom_10.png" id="att000_set_up_remote_processing_from_phplistdotcom_10" media-type="image/png"/>
+    <item href="static/create_a_subscribe_page_in_phpList_1.png" id="att134_create_a_subscribe_page_in_phpList_1" media-type="image/png"/>
+    <item href="static/main.png" id="att043_main" media-type="image/png"/>
+    <item href="static/new_database.png" id="att280_new_database" media-type="image/png"/>
+    <item href="static/broad_way_world_signup_2.png" id="att327_broad_way_world_signup_2" media-type="image/png"/>
+    <item href="ch016_user-attributes.xhtml" id="ch016_user-attributes" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_lots_of_lists.png" id="att229_phpList_lots_of_lists" media-type="image/png"/>
+    <item href="ch007_sending-your-first-campaign.xhtml" id="ch007_sending-your-first-campaign" media-type="application/xhtml+xml"/>
+    <item href="static/overview.png" id="att080_overview" media-type="image/png"/>
+    <item href="static/scroll.jpg" id="att403_scroll" media-type="image/jpeg"/>
+    <item href="static/list_1.png" id="att116_list_1" media-type="image/png"/>
+    <item href="static/list_7.png" id="att108_list_7" media-type="image/png"/>
+    <item href="static/add_subscribers_phpList.png" id="att348_add_subscribers_phpList" media-type="image/png"/>
+    <item href="ch013_adding-subscribers-to-lists.xhtml" id="ch013_adding-subscribers-to-lists" media-type="application/xhtml+xml"/>
+    <item href="static/advacned_campaign_statistics_overview.png" id="att035_advacned_campaign_statistics_overview" media-type="image/png"/>
+    <item href="static/where_to_find_placeholders_list_phpList_2.png" id="att147_where_to_find_placeholders_list_phpList_2" media-type="image/png"/>
+    <item href="static/preferences_url_11.png" id="att057_preferences_url_11" media-type="image/png"/>
+    <item href="static/phpList_campaign_settings_footer_1.png" id="att242_phpList_campaign_settings_footer_1" media-type="image/png"/>
+    <item href="static/delete_1.png" id="att045_delete_1" media-type="image/png"/>
+    <item href="static/phpList_import_emails_28_1.png" id="att193_phpList_import_emails_28_1" media-type="image/png"/>
+    <item href="static/sub_setting.jpg" id="att356_sub_setting" media-type="image/jpeg"/>
+    <item href="static/set_up_remote_processing_from_phplistdotcom_4.png" id="att008_set_up_remote_processing_from_phplistdotcom_4" media-type="image/png"/>
+    <item href="static/create_a_subscribe_page_in_phpList_4_1.png" id="att125_create_a_subscribe_page_in_phpList_4_1" media-type="image/png"/>
+    <item href="static/result.jpg" id="att402_result" media-type="image/jpeg"/>
+    <item href="static/admin_lang_5.png" id="att020_admin_lang_5" media-type="image/png"/>
+    <item href="static/create_a_subscribe_page_in_phpList_9.png" id="att128_create_a_subscribe_page_in_phpList_9" media-type="image/png"/>
+    <item href="static/phpList_import_emails_8.png" id="att215_phpList_import_emails_8" media-type="image/png"/>
+    <item href="ch047_troubleshooting-techniques.xhtml" id="ch047_troubleshooting-techniques" media-type="application/xhtml+xml"/>
+    <item href="static/attribute_selection_2_1.png" id="att171_attribute_selection_2_1" media-type="image/png"/>
+    <item href="static/using_your_simple_template_5.png" id="att234_using_your_simple_template_5" media-type="image/png"/>
+    <item href="static/creating_lists_in_phpList_2.png" id="att232_creating_lists_in_phpList_2" media-type="image/png"/>
+    <item href="static/phpList_extract_here.png" id="att299_phpList_extract_here" media-type="image/png"/>
+    <item href="static/list_8.png" id="att111_list_8" media-type="image/png"/>
+    <item href="static/preferences_url_9.png" id="att059_preferences_url_9" media-type="image/png"/>
+    <item href="static/footer_5.png" id="att098_footer_5" media-type="image/png"/>
+    <item href="static/paste_subscribers_phpList.png" id="att343_paste_subscribers_phpList" media-type="image/png"/>
+    <item href="static/footer_4.png" id="att099_footer_4" media-type="image/png"/>
+    <item href="static/copy_paste_2.jpg" id="att369_copy_paste_2" media-type="image/jpeg"/>
+    <item href="static/send_campaign_phpList_2.png" id="att252_send_campaign_phpList_2" media-type="image/png"/>
+    <item href="static/set_up_remote_processing_from_phplistdotcom_5.png" id="att003_set_up_remote_processing_from_phplistdotcom_5" media-type="image/png"/>
+    <item href="ch006_adding-your-first-subscribers.xhtml" id="ch006_adding-your-first-subscribers" media-type="application/xhtml+xml"/>
+    <item href="static/using_your_simple_template_4.png" id="att237_using_your_simple_template_4" media-type="image/png"/>
+    <item href="static/phpList_upgrade_1.png" id="att158_phpList_upgrade_1" media-type="image/png"/>
+    <item href="static/create_a_subscribe_page_in_phpList_5.png" id="att132_create_a_subscribe_page_in_phpList_5" media-type="image/png"/>
+    <item href="static/set_up_remote_processing_from_phplistdotcom_9.png" id="att001_set_up_remote_processing_from_phplistdotcom_9" media-type="image/png"/>
+    <item href="static/phpList_import_emails_20.png" id="att202_phpList_import_emails_20" media-type="image/png"/>
+    <item href="static/template_list_1.png" id="att305_template_list_1" media-type="image/png"/>
+    <item href="static/phplist_overview.jpg" id="att399_phplist_overview" media-type="image/jpeg"/>
+    <item href="static/phpList_add_a_template_3.png" id="att339_phpList_add_a_template_3" media-type="image/png"/>
+    <item href="static/phpList_dashboard.png" id="att167_phpList_dashboard" media-type="image/png"/>
+    <item href="static/uni_group_twitter_1.png" id="att337_uni_group_twitter_1" media-type="image/png"/>
+    <item href="static/ethical_pets.png" id="att084_ethical_pets" media-type="image/png"/>
+    <item href="static/phpList_upload_template.png" id="att251_phpList_upload_template" media-type="image/png"/>
+    <item href="static/pre-template_phplist.png" id="att320_pre-template_phplist" media-type="image/png"/>
+    <item href="static/subject_line_phpList_1.png" id="att384_subject_line_phpList_1" media-type="image/png"/>
+    <item href="static/footer_5_1.png" id="att096_footer_5_1" media-type="image/png"/>
+    <item href="static/phpList_categorise_lists_5.png" id="att224_phpList_categorise_lists_5" media-type="image/png"/>
+    <item href="static/go_to_install.png" id="att295_go_to_install" media-type="image/png"/>
+    <item href="static/preferences_2.png" id="att069_preferences_2" media-type="image/png"/>
+    <item href="static/segementation_prestashop_export.png" id="att139_segementation_prestashop_export" media-type="image/png"/>
+    <item href="static/logging_in_fullscreen.png" id="att103_logging_in_fullscreen" media-type="image/png"/>
+    <item href="static/phpList_import_emails_14.png" id="att207_phpList_import_emails_14" media-type="image/png"/>
+    <item href="static/footer_1.png" id="att102_footer_1" media-type="image/png"/>
+    <item href="static/attribute_selection_2_1_2.png" id="att151_attribute_selection_2_1_2" media-type="image/png"/>
+    <item href="static/image_included.png" id="att309_image_included" media-type="image/png"/>
+    <item href="static/pageroot_phplist.png" id="att289_pageroot_phplist" media-type="image/png"/>
+    <item href="static/phpList_forward_to_friend_in_email_footer.png" id="att395_phpList_forward_to_friend_in_email_footer" media-type="image/png"/>
+    <item href="static/re-queue.png" id="att041_re-queue" media-type="image/png"/>
+    <item href="static/photo-1.JPG" id="att411_photo-1" media-type="image/jpeg"/>
+    <item href="static/database_backup_phpList_1.png" id="att166_database_backup_phpList_1" media-type="image/png"/>
+    <item href="static/attributes_from_main_menu_phpList.png" id="att182_attributes_from_main_menu_phpList" media-type="image/png"/>
+    <item href="static/log_in_screen.png" id="att312_log_in_screen" media-type="image/png"/>
+    <item href="static/attribute_selection_2_1_1.png" id="att152_attribute_selection_2_1_1" media-type="image/png"/>
+    <item href="ch037_setting-up-your-cron.xhtml" id="ch037_setting-up-your-cron" media-type="application/xhtml+xml"/>
+    <item href="static/open_statistics_1.png" id="att352_open_statistics_1" media-type="image/png"/>
+    <item href="static/plain_text_view_source_5.png" id="att090_plain_text_view_source_5" media-type="image/png"/>
+    <item href="static/bounce_config_1.png" id="att019_bounce_config_1" media-type="image/png"/>
+    <item href="static/phpList_config_campaign_settings_2.png" id="att272_phpList_config_campaign_settings_2" media-type="image/png"/>
+    <item href="static/database_backup_phpList_3.png" id="att168_database_backup_phpList_3" media-type="image/png"/>
+    <item href="static/view_basic_campaign_statistics_in_phplist_2.png" id="att407_view_basic_campaign_statistics_in_phplist_2" media-type="image/png"/>
+    <item href="static/enter_username_and_password.png" id="att186_enter_username_and_password" media-type="image/png"/>
+    <item href="static/embargo_2.png" id="att254_embargo_2" media-type="image/png"/>
+    <item href="static/preferences_url.png" id="att068_preferences_url" media-type="image/png"/>
+    <item href="static/testing_name_known.png" id="att144_testing_name_known" media-type="image/png"/>
+    <item href="static/click_continue.png" id="att049_click_continue" media-type="image/png"/>
+    <item href="static/set_up_remote_processing_from_phplistdotcom_8.png" id="att004_set_up_remote_processing_from_phplistdotcom_8" media-type="image/png"/>
+    <item href="static/footer_6_1.png" id="att095_footer_6_1" media-type="image/png"/>
+    <item href="static/using_your_simple_template_3.png" id="att238_using_your_simple_template_3" media-type="image/png"/>
+    <item href="static/phpList_import_emails_30.png" id="att192_phpList_import_emails_30" media-type="image/png"/>
+    <item href="static/navigate_to_extracted_phplist.png" id="att298_navigate_to_extracted_phplist" media-type="image/png"/>
+    <item href="static/url_drilldown_statistics.png" id="att028_url_drilldown_statistics" media-type="image/png"/>
+    <item href="static/testing_name_known_outcome_1.png" id="att140_testing_name_known_outcome_1" media-type="image/png"/>
+    <item href="static/forward_1.png" id="att074_forward_1" media-type="image/png"/>
+    <item href="static/config_backup_phpList.png" id="att163_config_backup_phpList" media-type="image/png"/>
+    <item href="static/new_version_download_phplist_2.png" id="att164_new_version_download_phplist_2" media-type="image/png"/>
+    <item href="static/content_placeholder.png" id="att307_content_placeholder" media-type="image/png"/>
+    <item href="ch009_basic-campaign-statistics.xhtml" id="ch009_basic-campaign-statistics" media-type="application/xhtml+xml"/>
+    <item href="static/config_settings_templates.png" id="att269_config_settings_templates" media-type="image/png"/>
+    <item href="static/export_customer_emails_from_prestashop_1.png" id="att390_export_customer_emails_from_prestashop_1" media-type="image/png"/>
+    <item href="static/infographic_idea_1.png" id="att223_infographic_idea_1" media-type="image/png"/>
+    <item href="static/finished_composing_2.png" id="att257_finished_composing_2" media-type="image/png"/>
+    <item href="static/phpList_import_emails_2.png" id="att220_phpList_import_emails_2" media-type="image/png"/>
+    <item href="static/subject_line_phpList.png" id="att385_subject_line_phpList" media-type="image/png"/>
+    <item href="static/broad_way_world_email_1.png" id="att323_broad_way_world_email_1" media-type="image/png"/>
+    <item href="static/paste_subscribers_phpList_2.png" id="att346_paste_subscribers_phpList_2" media-type="image/png"/>
+    <item href="static/pageroot_1.png" id="att286_pageroot_1" media-type="image/png"/>
+    <item href="static/create_a_subscribe_page_in_phpList_3.png" id="att130_create_a_subscribe_page_in_phpList_3" media-type="image/png"/>
+    <item href="static/forward_form.png" id="att073_forward_form" media-type="image/png"/>
+    <item href="static/set_up_remote_processing_from_phplistdotcom_1.png" id="att007_set_up_remote_processing_from_phplistdotcom_1" media-type="image/png"/>
+    <item href="static/phpList_upgrade_3.png" id="att154_phpList_upgrade_3" media-type="image/png"/>
+    <item href="ch038_scheduling.xhtml" id="ch038_scheduling" media-type="application/xhtml+xml"/>
+    <item href="static/config.jpg" id="att396_config" media-type="image/jpeg"/>
+    <item href="static/plugins_menu_phpList_1.png" id="att053_plugins_menu_phpList_1" media-type="image/png"/>
+    <item href="static/create_a_subscribe_page_in_phpList_10.png" id="att123_create_a_subscribe_page_in_phpList_10" media-type="image/png"/>
+    <item href="static/create_db.jpg" id="att401_create_db" media-type="image/jpeg"/>
+    <item href="static/admin_lang_4.png" id="att023_admin_lang_4" media-type="image/png"/>
+    <item href="static/create_a_subscribe_page_in_phpList_4.png" id="att129_create_a_subscribe_page_in_phpList_4" media-type="image/png"/>
+    <item href="static/footer_6.png" id="att097_footer_6" media-type="image/png"/>
+    <item href="static/opened_drilldown.png" id="att034_opened_drilldown" media-type="image/png"/>
+    <item href="static/select_lists_phpList.png" id="att359_select_lists_phpList" media-type="image/png"/>
+    <item href="static/attributes_created_from_dataset.png" id="att180_attributes_created_from_dataset" media-type="image/png"/>
+    <item href="static/segementation_import_emails_result.png" id="att136_segementation_import_emails_result" media-type="image/png"/>
+    <item href="static/phpList_insert-edit_link_button.png" id="att373_phpList_insert-edit_link_button" media-type="image/png"/>
+    <item href="static/embargo.png" id="att360_embargo" media-type="image/png"/>
+    <item href="static/finished_composing.png" id="att367_finished_composing" media-type="image/png"/>
+    <item href="static/create_a_subscribe_page_in_phpList_7.png" id="att127_create_a_subscribe_page_in_phpList_7" media-type="image/png"/>
+    <item href="static/google_per_campaign.png" id="att040_google_per_campaign" media-type="image/png"/>
+    <item href="static/exclude_lists.png" id="att105_exclude_lists" media-type="image/png"/>
+    <item href="static/phpList_config_transactional_settings_2.png" id="att267_phpList_config_transactional_settings_2" media-type="image/png"/>
+    <item href="static/new_version_notice_phpList_dashboard.png" id="att162_new_version_notice_phpList_dashboard" media-type="image/png"/>
+    <item href="static/footer_2.png" id="att101_footer_2" media-type="image/png"/>
+    <item href="static/paste_subscribers_phpList_2_1.png" id="att345_paste_subscribers_phpList_2_1" media-type="image/png"/>
+    <item href="static/pageroot.png" id="att287_pageroot" media-type="image/png"/>
+    <item href="ch039_sending-a-web-page.xhtml" id="ch039_sending-a-web-page" media-type="application/xhtml+xml"/>
+    <item href="static/broad_way_world_email.png" id="att326_broad_way_world_email" media-type="image/png"/>
+    <item href="static/create_a_new_list_name_and_save.png" id="att349_create_a_new_list_name_and_save" media-type="image/png"/>
+    <item href="static/create_a_subscribe_page_in_phpList_8.png" id="att126_create_a_subscribe_page_in_phpList_8" media-type="image/png"/>
+    <item href="ch019_subscriber-management-moving-deleting-and-transferring-subscribes.xhtml" id="ch019_subscriber-management-moving-deleting-and-transferring-subscribes" media-type="application/xhtml+xml"/>
+    <item href="static/unactivated_manual_text_tab.png" id="att083_unactivated_manual_text_tab" media-type="image/png"/>
+    <item href="static/upgrade.jpg" id="att185_upgrade" media-type="image/jpeg"/>
+    <item href="static/using_your_simple_template_2.png" id="att235_using_your_simple_template_2" media-type="image/png"/>
+    <item href="ch025_diy-super-simple-template.xhtml" id="ch025_diy-super-simple-template" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_import_emails_15.png" id="att208_phpList_import_emails_15" media-type="image/png"/>
+    <item href="static/export_customer_emails_from_prestashop_2.png" id="att391_export_customer_emails_from_prestashop_2" media-type="image/png"/>
+    <item href="static/view_basic_campaign_statistics_in_phplist_1.png" id="att408_view_basic_campaign_statistics_in_phplist_1" media-type="image/png"/>
+    <item href="static/webpage2.jpg" id="att011_webpage2" media-type="image/jpeg"/>
+    <item href="static/gov_subscribe_page.png" id="att260_gov_subscribe_page" media-type="image/png"/>
+    <item href="static/open_statistics.png" id="att353_open_statistics" media-type="image/png"/>
+    <item href="static/footer_7.png" id="att093_footer_7" media-type="image/png"/>
+    <item href="static/set_up_remote_processing_from_phplistdotcom_3.png" id="att009_set_up_remote_processing_from_phplistdotcom_3" media-type="image/png"/>
+    <item href="static/edit_an_image.png" id="att376_edit_an_image" media-type="image/png"/>
+    <item href="ch027_advanced-campaign-statistics.xhtml" id="ch027_advanced-campaign-statistics" media-type="application/xhtml+xml"/>
+    <item href="ch032_upgrading.xhtml" id="ch032_upgrading" media-type="application/xhtml+xml"/>
+    <item href="static/process_queue.png" id="att358_process_queue" media-type="image/png"/>
+    <item href="static/confirm.png" id="att044_confirm" media-type="image/png"/>
+    <item href="static/phplist_setup.jpg" id="att398_phplist_setup" media-type="image/jpeg"/>
+    <item href="static/google_result_1.png" id="att038_google_result_1" media-type="image/png"/>
+    <item href="static/activate_manual_text_tab.png" id="att082_activate_manual_text_tab" media-type="image/png"/>
+    <item href="static/phpList_import_emails_16.png" id="att206_phpList_import_emails_16" media-type="image/png"/>
+    <item href="static/manual_text_tab_actiaved.png" id="att081_manual_text_tab_actiaved" media-type="image/png"/>
+    <item href="ch026_subscribe-page-design-and-configuration.xhtml" id="ch026_subscribe-page-design-and-configuration" media-type="application/xhtml+xml"/>
+    <item href="ch022_the-footer.xhtml" id="ch022_the-footer" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_add_template.png" id="att248_phpList_add_template" media-type="image/png"/>
+    <item href="static/forward.png" id="att075_forward" media-type="image/png"/>
+    <item href="static/footer_8.png" id="att092_footer_8" media-type="image/png"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="static/Initialise_database_phpList.png" id="att294_Initialise_database_phpList" media-type="image/png"/>
+    <item href="static/plain_text_view_source_4.png" id="att091_plain_text_view_source_4" media-type="image/png"/>
+    <item href="static/admin_lang_3.png" id="att024_admin_lang_3" media-type="image/png"/>
+    <item href="static/pageroot_phplist_2.png" id="att288_pageroot_phplist_2" media-type="image/png"/>
+    <item href="static/composing_phpList_1.png" id="att258_composing_phpList_1" media-type="image/png"/>
+    <item href="static/attribute_selection_3.png" id="att175_attribute_selection_3" media-type="image/png"/>
+    <item href="static/install_complete.png" id="att149_install_complete" media-type="image/png"/>
+    <item href="static/subject_line_phpList_2.png" id="att383_subject_line_phpList_2" media-type="image/png"/>
+    <item href="static/click_install.png" id="att050_click_install" media-type="image/png"/>
+    <item href="static/phpList_import_emails_6.png" id="att217_phpList_import_emails_6" media-type="image/png"/>
+    <item href="static/phpList_compose_message.png" id="att381_phpList_compose_message" media-type="image/png"/>
+    <item href="static/subscriber_profile_4_1.png" id="att117_subscriber_profile_4_1" media-type="image/png"/>
+    <item href="static/click_next_1.png" id="att364_click_next_1" media-type="image/png"/>
+    <item href="ch024_advanced-templating.xhtml" id="ch024_advanced-templating" media-type="application/xhtml+xml"/>
+    <item href="ch008_your-first-campaign.xhtml" id="ch008_your-first-campaign" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_config_security_settings.png" id="att273_phpList_config_security_settings" media-type="image/png"/>
+    <item href="static/new_database_1.png" id="att278_new_database_1" media-type="image/png"/>
+    <item href="static/logged_in.png" id="att314_logged_in" media-type="image/png"/>
+    <item href="ch001_system-overview.xhtml" id="ch001_system-overview" media-type="application/xhtml+xml"/>
+    <item href="ch011_understanding-subscribers-and-lists.xhtml" id="ch011_understanding-subscribers-and-lists" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_upgrade_4.png" id="att153_phpList_upgrade_4" media-type="image/png"/>
+    <item href="static/pageroot_2.png" id="att285_pageroot_2" media-type="image/png"/>
+    <item href="static/forward_to_friend_phplist.png" id="att184_forward_to_friend_phplist" media-type="image/png"/>
+    <item href="static/select_lists_phpList_1.png" id="att253_select_lists_phpList_1" media-type="image/png"/>
+    <item href="static/url.jpg" id="att405_url" media-type="image/jpeg"/>
+    <item href="static/webpage4.jpg" id="att010_webpage4" media-type="image/jpeg"/>
+    <item href="static/signup_for_download.png" id="att188_signup_for_download" media-type="image/png"/>
+    <item href="static/where_to_find_placeholders_list_phpList.png" id="att146_where_to_find_placeholders_list_phpList" media-type="image/png"/>
+    <item href="static/embargo_1.png" id="att255_embargo_1" media-type="image/png"/>
+    <item href="static/final_steps_phpList.png" id="att292_final_steps_phpList" media-type="image/png"/>
+    <item href="ch043_phplist-plugins.xhtml" id="ch043_phplist-plugins" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_upload_lists.png" id="att297_phpList_upload_lists" media-type="image/png"/>
+    <item href="static/create_a_new_list_phpList_menu.png" id="att350_create_a_new_list_phpList_menu" media-type="image/png"/>
+    <item href="static/overview_lists.png" id="att077_overview_lists" media-type="image/png"/>
+    <item href="static/admin_lang_1.png" id="att022_admin_lang_1" media-type="image/png"/>
+    <item href="static/phpList_add_new_attributes.png" id="att106_phpList_add_new_attributes" media-type="image/png"/>
+    <item href="ch014_creating-a-subscribe-page.xhtml" id="ch014_creating-a-subscribe-page" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_config_segementation_settings_1.png" id="att266_phpList_config_segementation_settings_1" media-type="image/png"/>
+    <item href="static/phpList_import_emails_26.png" id="att195_phpList_import_emails_26" media-type="image/png"/>
+    <item href="ch012_creating-your-lists.xhtml" id="ch012_creating-your-lists" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_config_reporting_settings.png" id="att274_phpList_config_reporting_settings" media-type="image/png"/>
+    <item href="static/phpList_processing_queue_2.png" id="att304_phpList_processing_queue_2" media-type="image/png"/>
+    <item href="static/overview_lists_2.png" id="att076_overview_lists_2" media-type="image/png"/>
+    <item href="static/phpList_import_emails_27.png" id="att197_phpList_import_emails_27" media-type="image/png"/>
+    <item href="static/add_new_list_complete_phpList.png" id="att342_add_new_list_complete_phpList" media-type="image/png"/>
+    <item href="static/list_6.png" id="att109_list_6" media-type="image/png"/>
+    <item href="static/save_template_1.png" id="att148_save_template_1" media-type="image/png"/>
+    <item href="static/database_backup_phpList_2.png" id="att165_database_backup_phpList_2" media-type="image/png"/>
+    <item href="static/phpList_import_emails_11.png" id="att211_phpList_import_emails_11" media-type="image/png"/>
+    <item href="static/phpList_add_template_done.png" id="att244_phpList_add_template_done" media-type="image/png"/>
+    <item href="static/download_data.png" id="att033_download_data" media-type="image/png"/>
+    <item href="static/set_up_remote_processing_from_phplistdotcom_7.png" id="att005_set_up_remote_processing_from_phplistdotcom_7" media-type="image/png"/>
+    <item href="static/plugins_menu_phpList.png" id="att054_plugins_menu_phpList" media-type="image/png"/>
+    <item href="static/forward_form_1.png" id="att072_forward_form_1" media-type="image/png"/>
+    <item href="static/phpList_add_a_template.png" id="att341_phpList_add_a_template" media-type="image/png"/>
+    <item href="ch023_creating-a-template.xhtml" id="ch023_creating-a-template" media-type="application/xhtml+xml"/>
+    <item href="ch015_setting-up-your-list-categories.xhtml" id="ch015_setting-up-your-list-categories" media-type="application/xhtml+xml"/>
+    <item href="static/send_campaign_phpList_1.png" id="att303_send_campaign_phpList_1" media-type="image/png"/>
+    <item href="static/preferences_url_12.png" id="att056_preferences_url_12" media-type="image/png"/>
+    <item href="static/bounce_config_6.png" id="att014_bounce_config_6" media-type="image/png"/>
+    <item href="static/config_settings_google_phpList.png" id="att275_config_settings_google_phpList" media-type="image/png"/>
+    <item href="static/import_subscribers_from_prestashop_to_phpList_4.png" id="att332_import_subscribers_from_prestashop_to_phpList_4" media-type="image/png"/>
+    <item href="static/add-user.jpg" id="att400_add-user" media-type="image/jpeg"/>
+    <item href="static/preferences.png" id="att070_preferences" media-type="image/png"/>
+    <item href="static/examine_test_emails.png" id="att362_examine_test_emails" media-type="image/png"/>
+    <item href="static/clicked_drilldown.png" id="att027_clicked_drilldown" media-type="image/png"/>
+    <item href="static/access_stats_from_sent_camapigns.png" id="att037_access_stats_from_sent_camapigns" media-type="image/png"/>
+    <item href="static/phpList_import_emails_24.png" id="att200_phpList_import_emails_24" media-type="image/png"/>
+    <item href="static/forward_url.png" id="att071_forward_url" media-type="image/png"/>
+    <item href="static/preferences_url_3.png" id="att065_preferences_url_3" media-type="image/png"/>
+    <item href="static/phpList_initial_config.png" id="att296_phpList_initial_config" media-type="image/png"/>
+    <item href="static/phpList_processing_queue.png" id="att302_phpList_processing_queue" media-type="image/png"/>
+    <item href="static/turn_plugin_off.png" id="att048_turn_plugin_off" media-type="image/png"/>
+    <item href="static/phpList_config_general_settings.png" id="att270_phpList_config_general_settings" media-type="image/png"/>
+    <item href="static/testing_name_not_known.png" id="att143_testing_name_not_known" media-type="image/png"/>
+    <item href="static/preferences_url_1.png" id="att067_preferences_url_1" media-type="image/png"/>
+    <item href="static/phpList_statistics_overview.png" id="att355_phpList_statistics_overview" media-type="image/png"/>
+    <item href="static/post-template_phplist.png" id="att318_post-template_phplist" media-type="image/png"/>
+    <item href="static/choose_template_phplist_1.png" id="att306_choose_template_phplist_1" media-type="image/png"/>
+    <item href="static/attributes_map_automatically.png" id="att178_attributes_map_automatically" media-type="image/png"/>
+    <item href="static/uni_group_subscribe_page.png" id="att315_uni_group_subscribe_page" media-type="image/png"/>
+    <item href="static/phpList_categorise_lists_6.png" id="att225_phpList_categorise_lists_6" media-type="image/png"/>
+    <item href="static/organisation_1.jpg" id="att190_organisation_1" media-type="image/jpeg"/>
+    <item href="static/image_remote_blocked.png" id="att308_image_remote_blocked" media-type="image/png"/>
+    <item href="static/show_remote_content.png" id="att354_show_remote_content" media-type="image/png"/>
+    <item href="static/footer_9.png" id="att055_footer_9" media-type="image/png"/>
+    <item href="static/attribute_selection.png" id="att173_attribute_selection" media-type="image/png"/>
+    <item href="static/plain_text_view_source_6.png" id="att087_plain_text_view_source_6" media-type="image/png"/>
+    <item href="static/sign_up_to_list.png" id="att150_sign_up_to_list" media-type="image/png"/>
+    <item href="static/phpList_forward_to_friend_system.png" id="att393_phpList_forward_to_friend_system" media-type="image/png"/>
+    <item href="static/create_a_subscribe_page_in_phpList_6.png" id="att131_create_a_subscribe_page_in_phpList_6" media-type="image/png"/>
+    <item href="static/gov_subscribe_and_download_page.png" id="att261_gov_subscribe_and_download_page" media-type="image/png"/>
+    <item href="static/marsha_website_2.png" id="att317_marsha_website_2" media-type="image/png"/>
+    <item href="static/phpList_categorise_lists_4.png" id="att226_phpList_categorise_lists_4" media-type="image/png"/>
+    <item href="static/copy_url.png" id="att051_copy_url" media-type="image/png"/>
+    <item href="static/subscriber_history.png" id="att030_subscriber_history" media-type="image/png"/>
+    <item href="static/phpList_add_a_template_4.png" id="att338_phpList_add_a_template_4" media-type="image/png"/>
+    <item href="static/bounce_config_3.png" id="att017_bounce_config_3" media-type="image/png"/>
+    <item href="static/phpList_import_emails_5.png" id="att218_phpList_import_emails_5" media-type="image/png"/>
+    <item href="static/phpList_menu_send_a_campaign.png" id="att387_phpList_menu_send_a_campaign" media-type="image/png"/>
+    <item href="static/copy_paste.jpg" id="att371_copy_paste" media-type="image/jpeg"/>
+    <item href="static/send_campaign_phpList.png" id="att361_send_campaign_phpList" media-type="image/png"/>
+    <item href="static/clicked_drilldown_details.png" id="att026_clicked_drilldown_details" media-type="image/png"/>
+    <item href="static/phpList_image_properties_dialouge.png" id="att378_phpList_image_properties_dialouge" media-type="image/png"/>
+    <item href="static/phpList_editing_attributes.png" id="att176_phpList_editing_attributes" media-type="image/png"/>
+    <item href="static/phpList_campaign_settings_footer_4.png" id="att241_phpList_campaign_settings_footer_4" media-type="image/png"/>
+    <item href="static/preferences_url_5.png" id="att063_preferences_url_5" media-type="image/png"/>
+    <item href="static/copy_paste_3.jpg" id="att357_copy_paste_3" media-type="image/jpeg"/>
+    <item href="static/create_a_new_list_phpList_subscriber_list_page.png" id="att351_create_a_new_list_phpList_subscriber_list_page" media-type="image/png"/>
+    <item href="static/plain_text_view_source_2.png" id="att088_plain_text_view_source_2" media-type="image/png"/>
+    <item href="static/view_basic_campaign_statistics_in_phplist.png" id="att409_view_basic_campaign_statistics_in_phplist" media-type="image/png"/>
+    <item href="static/insert_or_add_image_phpList.png" id="att379_insert_or_add_image_phpList" media-type="image/png"/>
+    <item href="static/template_list.png" id="att321_template_list" media-type="image/png"/>
+    <item href="static/preferences_url_7.png" id="att061_preferences_url_7" media-type="image/png"/>
+    <item href="static/phpList_config_segementation_settings_2.png" id="att265_phpList_config_segementation_settings_2" media-type="image/png"/>
+    <item href="static/phpList_forward_to_friend_html.png" id="att394_phpList_forward_to_friend_html" media-type="image/png"/>
+    <item href="static/phpList_add_a_test_link_select_text.png" id="att374_phpList_add_a_test_link_select_text" media-type="image/png"/>
+    <item href="static/preferences_url_4.png" id="att064_preferences_url_4" media-type="image/png"/>
+    <item href="static/phpList_import_emails_13.png" id="att209_phpList_import_emails_13" media-type="image/png"/>
+    <item href="static/ethical_pets_newsletter.png" id="att392_ethical_pets_newsletter" media-type="image/png"/>
+    <item href="static/import_subscribers_from_prestashop_to_phpList_5.png" id="att330_import_subscribers_from_prestashop_to_phpList_5" media-type="image/png"/>
+    <item href="static/phpList_upload_lists_1.png" id="att283_phpList_upload_lists_1" media-type="image/png"/>
+    <item href="static/bounce_config_4.png" id="att016_bounce_config_4" media-type="image/png"/>
+    <item href="static/create_a_subscribe_page_in_phpList_11.png" id="att122_create_a_subscribe_page_in_phpList_11" media-type="image/png"/>
+    <item href="ch045_setting-up-phplist-in-your-own-language.xhtml" id="ch045_setting-up-phplist-in-your-own-language" media-type="application/xhtml+xml"/>
+    <item href="static/list_2.png" id="att113_list_2" media-type="image/png"/>
+    <item href="static/insert_or_add_image_phpList_two.png" id="att377_insert_or_add_image_phpList_two" media-type="image/png"/>
+    <item href="static/phpList_save_template.png" id="att246_phpList_save_template" media-type="image/png"/>
+    <item href="static/plain_text_view_source_6_1.png" id="att086_plain_text_view_source_6_1" media-type="image/png"/>
+    <item href="static/phpList_log_out.png" id="att313_phpList_log_out" media-type="image/png"/>
+    <item href="static/creating_lists_in_phpList_3.png" id="att231_creating_lists_in_phpList_3" media-type="image/png"/>
+    <item href="static/phpList_upgrade_5.png" id="att156_phpList_upgrade_5" media-type="image/png"/>
+    <item href="static/generate_plain_test_version_phpList.png" id="att366_generate_plain_test_version_phpList" media-type="image/png"/>
+    <item href="static/phpList_download_1.png" id="att300_phpList_download_1" media-type="image/png"/>
+    <item href="static/phpList_import_emails_12.png" id="att210_phpList_import_emails_12" media-type="image/png"/>
+    <item href="static/add_image.png" id="att322_add_image" media-type="image/png"/>
+    <item href="static/how_to_use_placeholders_1.png" id="att145_how_to_use_placeholders_1" media-type="image/png"/>
+    <item href="static/phpList_import_emails_1.png" id="att222_phpList_import_emails_1" media-type="image/png"/>
+    <item href="static/phpList_config_segementation_settings_4.png" id="att263_phpList_config_segementation_settings_4" media-type="image/png"/>
+    <item href="static/phpList_import_emails_10.png" id="att212_phpList_import_emails_10" media-type="image/png"/>
+    <item href="static/creating_lists_in_phpList_1.png" id="att233_creating_lists_in_phpList_1" media-type="image/png"/>
+    <item href="static/database_backup_phpList_4.png" id="att160_database_backup_phpList_4" media-type="image/png"/>
+    <item href="static/phpList_import_emails_18.png" id="att203_phpList_import_emails_18" media-type="image/png"/>
+    <item href="static/new_version_download_phplist_3.png" id="att159_new_version_download_phplist_3" media-type="image/png"/>
+    <item href="ch005_logging-in.xhtml" id="ch005_logging-in" media-type="application/xhtml+xml"/>
+    <item href="static/testing_name_known_outcome.png" id="att142_testing_name_known_outcome" media-type="image/png"/>
+    <item href="static/phpList_template_menu.png" id="att249_phpList_template_menu" media-type="image/png"/>
+    <item href="static/from_line_phplist.png" id="att382_from_line_phplist" media-type="image/png"/>
+    <item href="static/in_session_mag_1.png" id="att085_in_session_mag_1" media-type="image/png"/>
+    <item href="static/list_10.png" id="att107_list_10" media-type="image/png"/>
+    <item href="static/Initialise_database_phpList_1.png" id="att293_Initialise_database_phpList_1" media-type="image/png"/>
+    <item href="static/phpList_categorise_lists_1.png" id="att228_phpList_categorise_lists_1" media-type="image/png"/>
+    <item href="static/subscriber_profile_1.png" id="att119_subscriber_profile_1" media-type="image/png"/>
+    <item href="static/phpList_import_emails_28.png" id="att194_phpList_import_emails_28" media-type="image/png"/>
+    <item href="static/database_1.png" id="att281_database_1" media-type="image/png"/>
+    <item href="static/phpList_footer_menu.png" id="att239_phpList_footer_menu" media-type="image/png"/>
+    <item href="static/Save_and_continue_editing.png" id="att170_Save_and_continue_editing" media-type="image/png"/>
+    <item href="static/list_5.png" id="att114_list_5" media-type="image/png"/>
+    <item href="static/configuration.png" id="att284_configuration" media-type="image/png"/>
+    <item href="static/import.jpg" id="att368_import" media-type="image/jpeg"/>
+    <item href="static/phpList_add_a_template_2.png" id="att340_phpList_add_a_template_2" media-type="image/png"/>
+    <item href="static/exclude_lists_2.png" id="att104_exclude_lists_2" media-type="image/png"/>
+    <item href="static/download_data_1.png" id="att032_download_data_1" media-type="image/png"/>
+    <item href="static/send_as_html_or_text.png" id="att169_send_as_html_or_text" media-type="image/png"/>
+    <item href="static/phpList_upload_template_2.png" id="att250_phpList_upload_template_2" media-type="image/png"/>
+    <item href="static/set_up_remote_processing_from_phplistdotcom_2.png" id="att006_set_up_remote_processing_from_phplistdotcom_2" media-type="image/png"/>
+    <item href="static/marsha_website_1.png" id="att316_marsha_website_1" media-type="image/png"/>
+    <item href="static/how_to_compose_a_campaign_in_phplist_1.png" id="att386_how_to_compose_a_campaign_in_phplist_1" media-type="image/png"/>
+    <item href="static/drill_down_right_to_subscriber_level.png" id="att031_drill_down_right_to_subscriber_level" media-type="image/png"/>
+    <item href="static/admin_lang_2.png" id="att021_admin_lang_2" media-type="image/png"/>
+    <item href="static/change_embargo_time.png" id="att042_change_embargo_time" media-type="image/png"/>
+    <item href="static/preferences_url_8.png" id="att060_preferences_url_8" media-type="image/png"/>
+    <item href="static/phpList_import_emails_4.png" id="att221_phpList_import_emails_4" media-type="image/png"/>
+    <item href="static/phpList_upload_template_image.png" id="att245_phpList_upload_template_image" media-type="image/png"/>
+    <item href="static/overview_2.png" id="att078_overview_2" media-type="image/png"/>
+    <item href="ch031_configuration.xhtml" id="ch031_configuration" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_campaign_sent_all_done.png" id="att301_phpList_campaign_sent_all_done" media-type="image/png"/>
+    <item href="static/choose_template_phplist.png" id="att319_choose_template_phplist" media-type="image/png"/>
+    <item href="static/bounce_config_5.png" id="att015_bounce_config_5" media-type="image/png"/>
+    <item href="static/webpage3.jpg" id="att013_webpage3" media-type="image/jpeg"/>
+    <item href="static/bounce_config_2.png" id="att018_bounce_config_2" media-type="image/png"/>
+    <item href="static/statistics_menu.png" id="att025_statistics_menu" media-type="image/png"/>
+    <item href="static/import_subscribers_from_prestashop_to_phpList_1.png" id="att334_import_subscribers_from_prestashop_to_phpList_1" media-type="image/png"/>
+    <item href="static/create_a_subscribe_page_in_phpList_9_1.png" id="att124_create_a_subscribe_page_in_phpList_9_1" media-type="image/png"/>
+    <item href="static/copy_paste_1.jpg" id="att370_copy_paste_1" media-type="image/jpeg"/>
+    <item href="static/sending_categories.png" id="att183_sending_categories" media-type="image/png"/>
+    <item href="static/create_a_subscribe_page_in_phpList_2.png" id="att133_create_a_subscribe_page_in_phpList_2" media-type="image/png"/>
+    <item href="ch048_glossary.xhtml" id="ch048_glossary" media-type="application/xhtml+xml"/>
+    <item href="static/newuser.jpg" id="att397_newuser" media-type="image/jpeg"/>
+    <item href="static/how_to_view_statistics_in_phplist.png" id="att410_how_to_view_statistics_in_phplist" media-type="image/png"/>
+    <item href="static/placeholders_created_from attributes.png" id="att181_placeholders_created_from attributes" media-type="image/png"/>
+    <item href="ch003_about-this-manual.xhtml" id="ch003_about-this-manual" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_uploaded_lists.png" id="att282_phpList_uploaded_lists" media-type="image/png"/>
+    <item href="static/attributes_merge_automatically.png" id="att177_attributes_merge_automatically" media-type="image/png"/>
+    <item href="static/set_up_remote_processing_from_phplistdotcom_6.png" id="att002_set_up_remote_processing_from_phplistdotcom_6" media-type="image/png"/>
+    <item href="static/how_to_compose_a_campaign_in_phplist.png" id="att388_how_to_compose_a_campaign_in_phplist" media-type="image/png"/>
+    <item href="static/google_result.png" id="att039_google_result" media-type="image/png"/>
+    <item href="static/subscriber_profile_4.png" id="att120_subscriber_profile_4" media-type="image/png"/>
+    <item href="static/import_subscribers_from_prestashop_to_phpList_6.png" id="att331_import_subscribers_from_prestashop_to_phpList_6" media-type="image/png"/>
+    <item href="ch034_common-installation-errors.xhtml" id="ch034_common-installation-errors" media-type="application/xhtml+xml"/>
+    <item href="static/webpage1.jpg" id="att012_webpage1" media-type="image/jpeg"/>
+    <item href="static/a_text_link.png" id="att372_a_text_link" media-type="image/png"/>
+    <item href="static/phpList_import_emails_23.png" id="att201_phpList_import_emails_23" media-type="image/png"/>
+    <item href="static/paste_subscribers_results_phpList.png" id="att344_paste_subscribers_results_phpList" media-type="image/png"/>
+    <item href="static/signup_button.png" id="att187_signup_button" media-type="image/png"/>
+    <item href="static/preferences_url_6.png" id="att062_preferences_url_6" media-type="image/png"/>
+    <item href="ch033_upgrading-an-auto-installed-installation.xhtml" id="ch033_upgrading-an-auto-installed-installation" media-type="application/xhtml+xml"/>
+    <item href="static/view_basic_campaign_statistics_in_phplist_3.png" id="att406_view_basic_campaign_statistics_in_phplist_3" media-type="image/png"/>
+    <item href="static/phpList_campaign_settings_footer_3.png" id="att240_phpList_campaign_settings_footer_3" media-type="image/png"/>
+    <item href="static/send_test_phpList.png" id="att363_send_test_phpList" media-type="image/png"/>
+    <item href="static/phpList_import_emails_17.png" id="att204_phpList_import_emails_17" media-type="image/png"/>
+    <item href="static/phpList_config_segementation_settings_3.png" id="att264_phpList_config_segementation_settings_3" media-type="image/png"/>
+    <item href="static/overview_1.png" id="att079_overview_1" media-type="image/png"/>
+    <item href="ch030_instaling-using-an-auto-installer.xhtml" id="ch030_instaling-using-an-auto-installer" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_import_emails_9.png" id="att214_phpList_import_emails_9" media-type="image/png"/>
+    <item href="static/phpList_import_emails_7.png" id="att216_phpList_import_emails_7" media-type="image/png"/>
+    <item href="static/footer_6_2.png" id="att094_footer_6_2" media-type="image/png"/>
+    <item href="ch040_sending-plain-text.xhtml" id="ch040_sending-plain-text" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_categorise_lists_2.png" id="att227_phpList_categorise_lists_2" media-type="image/png"/>
+    <item href="static/preferences_url_2.png" id="att066_preferences_url_2" media-type="image/png"/>
+    <item href="static/config_phpList_1.png" id="att290_config_phpList_1" media-type="image/png"/>
+    <item href="static/change_col_name.png" id="att328_change_col_name" media-type="image/png"/>
+    <item href="static/finished_composing_1.png" id="att365_finished_composing_1" media-type="image/png"/>
+    <item href="static/clicked_drilldown_details_choose_url.png" id="att029_clicked_drilldown_details_choose_url" media-type="image/png"/>
+    <item href="static/send_to_segment.png" id="att135_send_to_segment" media-type="image/png"/>
+    <item href="static/phpList_campaign_settings_footer_2.png" id="att243_phpList_campaign_settings_footer_2" media-type="image/png"/>
+    <item href="ch018_targeting-your-campaigns.xhtml" id="ch018_targeting-your-campaigns" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_upgrade_2.png" id="att157_phpList_upgrade_2" media-type="image/png"/>
+    <item href="static/phpList_send_a_campaign.png" id="att389_phpList_send_a_campaign" media-type="image/png"/>
+    <item href="static/testing_name_not_known_outcome.png" id="att141_testing_name_not_known_outcome" media-type="image/png"/>
+    <item href="static/plugin_off.png" id="att047_plugin_off" media-type="image/png"/>
+    <item href="static/config_phpList.png" id="att291_config_phpList" media-type="image/png"/>
+    <item href="static/paper_sign-up_to_phpList.png" id="att329_paper_sign-up_to_phpList" media-type="image/png"/>
+    <item href="static/log_in_screen_2.png" id="att311_log_in_screen_2" media-type="image/png"/>
+    <item href="ch029_installation.xhtml" id="ch029_installation" media-type="application/xhtml+xml"/>
+    <item href="static/footer_3.png" id="att100_footer_3" media-type="image/png"/>
+    <item href="static/add_an_image_phpList.png" id="att380_add_an_image_phpList" media-type="image/png"/>
+    <item href="static/using_your_simple_template.png" id="att236_using_your_simple_template" media-type="image/png"/>
+    <item href="static/database_1_1.png" id="att279_database_1_1" media-type="image/png"/>
+    <item href="static/edit_config.png" id="att277_edit_config" media-type="image/png"/>
+    <item href="static/attribute_selection_4.png" id="att174_attribute_selection_4" media-type="image/png"/>
+    <item href="static/copy_subscribers_phpList.png" id="att347_copy_subscribers_phpList" media-type="image/png"/>
+    <item href="static/preferences_url_10.png" id="att058_preferences_url_10" media-type="image/png"/>
+    <item href="static/logging_in_url_phpList.png" id="att310_logging_in_url_phpList" media-type="image/png"/>
+    <item href="static/new_version_download_phplist.png" id="att161_new_version_download_phplist" media-type="image/png"/>
+    <item href="static/phpList_upload_template_image_2.png" id="att247_phpList_upload_template_image_2" media-type="image/png"/>
+    <item href="static/profile.png" id="att189_profile" media-type="image/png"/>
+    <item href="static/phpList_import_emails_22.png" id="att198_phpList_import_emails_22" media-type="image/png"/>
+    <item href="ch036_methods-of-sending-browser-cron-command-line.xhtml" id="ch036_methods-of-sending-browser-cron-command-line" media-type="application/xhtml+xml"/>
+    <item href="static/segmentation_dog_category.png" id="att138_segmentation_dog_category" media-type="image/png"/>
+    <item href="static/list_3.png" id="att112_list_3" media-type="image/png"/>
+    <item href="static/phpList_import_emails_1_1.png" id="att213_phpList_import_emails_1_1" media-type="image/png"/>
+    <item href="static/phpList_import_emails_21.png" id="att199_phpList_import_emails_21" media-type="image/png"/>
+    <item href="static/plain_text_view_source.png" id="att089_plain_text_view_source" media-type="image/png"/>
+    <item href="static/phpList_config_transactional_settings.png" id="att268_phpList_config_transactional_settings" media-type="image/png"/>
+    <item href="static/subscriber_profile_2.png" id="att118_subscriber_profile_2" media-type="image/png"/>
+    <item href="static/delete.png" id="att046_delete" media-type="image/png"/>
+    <item href="static/phpList_import_emails_25.png" id="att196_phpList_import_emails_25" media-type="image/png"/>
+    <item href="ch021_templates.xhtml" id="ch021_templates" media-type="application/xhtml+xml"/>
+    <item href="static/phpList_upgrade_6.png" id="att155_phpList_upgrade_6" media-type="image/png"/>
+    <item href="static/phpList_insert-edit_link_dialouge.png" id="att375_phpList_insert-edit_link_dialouge" media-type="image/png"/>
+    <item href="static/import_subscribers_from_prestashop_to_phpList_2.png" id="att333_import_subscribers_from_prestashop_to_phpList_2" media-type="image/png"/>
+    <item href="static/config_edit_icon_phpList.png" id="att276_config_edit_icon_phpList" media-type="image/png"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="ch001_system-overview"/>
+    <itemref idref="ch002_case-studies"/>
+    <itemref idref="ch003_about-this-manual"/>
+    <itemref idref="ch005_logging-in"/>
+    <itemref idref="ch006_adding-your-first-subscribers"/>
+    <itemref idref="ch007_sending-your-first-campaign"/>
+    <itemref idref="ch008_your-first-campaign"/>
+    <itemref idref="ch009_basic-campaign-statistics"/>
+    <itemref idref="ch011_understanding-subscribers-and-lists"/>
+    <itemref idref="ch012_creating-your-lists"/>
+    <itemref idref="ch013_adding-subscribers-to-lists"/>
+    <itemref idref="ch014_creating-a-subscribe-page"/>
+    <itemref idref="ch015_setting-up-your-list-categories"/>
+    <itemref idref="ch016_user-attributes"/>
+    <itemref idref="ch017_using-placeholders"/>
+    <itemref idref="ch018_targeting-your-campaigns"/>
+    <itemref idref="ch019_subscriber-management-moving-deleting-and-transferring-subscribes"/>
+    <itemref idref="ch021_templates"/>
+    <itemref idref="ch022_the-footer"/>
+    <itemref idref="ch023_creating-a-template"/>
+    <itemref idref="ch024_advanced-templating"/>
+    <itemref idref="ch025_diy-super-simple-template"/>
+    <itemref idref="ch026_subscribe-page-design-and-configuration"/>
+    <itemref idref="ch027_advanced-campaign-statistics"/>
+    <itemref idref="ch029_installation"/>
+    <itemref idref="ch030_instaling-using-an-auto-installer"/>
+    <itemref idref="ch031_configuration"/>
+    <itemref idref="ch032_upgrading"/>
+    <itemref idref="ch033_upgrading-an-auto-installed-installation"/>
+    <itemref idref="ch034_common-installation-errors"/>
+    <itemref idref="ch036_methods-of-sending-browser-cron-command-line"/>
+    <itemref idref="ch037_setting-up-your-cron"/>
+    <itemref idref="ch038_scheduling"/>
+    <itemref idref="ch039_sending-a-web-page"/>
+    <itemref idref="ch040_sending-plain-text"/>
+    <itemref idref="ch041_bounce-management"/>
+    <itemref idref="ch043_phplist-plugins"/>
+    <itemref idref="ch045_setting-up-phplist-in-your-own-language"/>
+    <itemref idref="ch047_troubleshooting-techniques"/>
+    <itemref idref="ch048_glossary"/>
+  </spine>
+  <guide/>
+</package>

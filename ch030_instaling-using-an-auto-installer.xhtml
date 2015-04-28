@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Installing using an auto-installer
+</h1>
+<h2>Softaculous, Fantastico, etc
+</h2>
+<p>If your web space offers Softaculous, Fantastico or other similar software installers, then you may choose to use these these installers as they do the bulk of the work for you and can be faster than manually installing phpList.
+</p>Log on to your web space, (cPanel/Plesk etc) and click on Softaculous/Fantastico then find the <strong>phpList</strong> installation and choose the <strong>Install </strong>option. <em>Please note, for this example I have used Softaculous installer.</em>
+<br/><p><img alt="installing phpList with Softaculous" src="static/phplist_overview.jpg" height="278" width="600"/><br/><br/>On the Install page you chose your settings. In the order shown in the image
+</p>
+<ul><li><strong>Protocol</strong> http:// is the norm</li>
+  <li><strong>Domain</strong> if you have more than one domain on your hosting/web space, choose that here.</li>
+  <li><strong>Directory</strong> you should set the directory that you wish your phpList installation to be placed in. <strong><em>This should usually be left blank </em></strong><em>however in this example we are using test/phplist1. </em>Any variations will become part of the URL to your phpList install, so it is best to keep it simple.</li>
+  <li>A database name is suggested next. You may change it within limits to a name that makes more sense to you if you wish. 8 characters are usually the maximum here as it will be prefixed with your hosting username (eg:user234_phplst1 in my example).</li>
+</ul><p>Important! If you have only one database available to all your websites, then it is very important to use a unique identifier here, one that makes sense to you as belonging to this phpList installation. If you have access to a number of databases, then it's an advantage to use one per installation.
+</p>
+<ul><li>Ignore the settings for the Cron job for the time being, there is some information on this in a later chapter</li>
+  <li>Site Settings, chose the name for your site, and change the default Table Prefix if you wish.</li>
+  <li>Finally, enter your username (admin by default), user password, make it good strong one. Real name and email and then click on the Install button.</li>
+</ul><p>
+  <br/><img alt="installing phpList with Softaculous" src="static/phplist_setup.jpg" height="456" width="600"/><br/><br/>Wait for it to complete installing your phpList and you get a final page offering the links to the public "front end" and the Admin "back end"
+  <br/><br/>That's it, you've installed phpList with Softaculous or Fantastico.&#160;
+</p>
+<p>One final thing to remember is that if you install phpList using this method, you can update phpList to later version in a matter of minutes via the Update option offered in&#160; Softaculous/Fantastic. Do however make a backup of your config/config.php file before starting the update especially if you have customised your settings.
+</p></body></html>

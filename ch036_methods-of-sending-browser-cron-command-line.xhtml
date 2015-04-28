@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Methods of sending (Browser, Cron, Command-line)
+</h1>
+<p>Setting up phpList for sending is a complex topic, there are many (many) variables, most of which which are out of the control of phpList developers, such as your hosting provider and server configuration.&#160;
+</p>
+<p>In our early chapters, we have assumed that you are sending from the browser, to a small list, and that your phpList has been configured already (or that it just so happened to work well out-of-the-box).&#160;
+</p>
+<p><span>How sending works&#160;</span>
+</p>
+<p>Once your campaign is ready, you need to tell phpList to send the campaign. There are two steps to this:
+</p>
+<p> 1. Submit the message to the to the queue.
+</p>
+<p>When creating the campaign, the last tab of the workflow is the 'SEND' tab. Pressing the 'start campaign' button submits the campaign to the sending queue.&#160;
+</p>
+<p>2. Process the queue, either manually via the browser or command line, or automatically via a cron job or remote queue processing system.&#160;
+</p>
+<h2>Manual sending using the browser
+  <br/></h2>
+<p>This is the simplest way to send. You must:
+</p>
+<p>
+</p>
+<ul><li>Leave the browser open while your process the queue</li>
+  <li>Leave your computer active (not asleep) while you process the queue</li>
+  <li>Be aware that your hosting provider may not allow emails to be sent this way by default, or may suspend your account if you send volumes which breach their terms and confitions.</li>
+</ul><p>This method of sending works essentially as described in chapter on Sending your first campaign. Using the default configuration file settings, either click the <strong>Process Queue</strong> button which is presented as the final step of the campaign workflow, or use the&#160;<strong>System</strong> &gt;<strong> Process queue </strong>option from the main menu.&#160;
+</p>
+<p>
+</p>
+<p>Once you begin sending you must leave the browser open: if the browser is closed while the message is sending, the queue processing will stop. To continue sending where you dropped off, you will need to open the browser, log into phpList, and "System"/"Process queue" again, leaving the browser open.
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>The system will send the queue using the settings in your config file (config.php), which controls the send rate, the envelope header, and so forth. You should talk to your hosting provider about these settings, they may which you to send in small batches or have a cap on the number of mails you can send each hour.
+</p>
+<h2>phpList.com remote queue processing
+</h2>
+<p>One way to bypass the issue of leaving your browser open, without creating a cron job, is to use the phpList.com remote queue processing system.
+</p>
+<p>This means that once you click to process the queue, phpList.com will keep your system sending after you close your browser: you are still sending from your server, and according to the settings in config.php, phplist.com just keeps your system "awake" for you.
+</p>
+<p>You will be prompted to consider this process the first time you send, you have previously sent messages then visit&#160;<strong>http://yourdomain/lists/admin/?page=hostedprocessqueuesetup</strong> to get started.
+</p>
+<p>You should see the following page.
+</p>
+<p>Click <strong>Create Account</strong>.
+  <br/></p>
+<p><img src="static/set_up_remote_processing_from_phplistdotcom_1.png" alt=""/></p>
+<p>This opens a window with a phpList.com page enabling you to create a special phpList.com account. Fill our your details and click<strong> Create account</strong>.
+  <br/></p>
+<p><img src="static/set_up_remote_processing_from_phplistdotcom_2.png" alt=""/></p>
+<p>You then need to go you your email account and click the link in the confirmation email.
+</p>
+<p><img src="static/set_up_remote_processing_from_phplistdotcom_4.png" alt=""/></p>
+<p>
+</p>
+<p>Click <strong>Continue</strong> to go your new account.
+  <br/></p>
+<p>
+</p>
+<p>
+</p>
+<p><img src="static/set_up_remote_processing_from_phplistdotcom_5.png" alt=""/>&#160;
+</p>
+<p><strong>Click to </strong>Generate new key, to get your API key.
+  <br/></p>
+<p><img src="static/set_up_remote_processing_from_phplistdotcom_6.png" alt=""/> Copy the API key.
+  <br/></p>
+<p>
+</p>
+<p><img src="static/set_up_remote_processing_from_phplistdotcom_7.png" alt=""/></p>
+<p>And paste it into your phpList installation, into the<strong> Enter the API key here</strong> box on <strong>http://yourdomain/lists/admin/?page=hostedprocessqueuesetup</strong>
+</p>
+<p><img src="static/set_up_remote_processing_from_phplistdotcom_8.png" alt=""/><br/></p>
+<p>Click <strong>Continue setup.
+  <br/></strong>
+</p>
+<p><img src="static/set_up_remote_processing_from_phplistdotcom_9.png" alt=""/>&#160;
+</p>
+<p>The process is now complete. When you add a message to the queue, it will be processed according to your settings.
+</p>
+<p> If you wish to disable this functionality in the future, go back to <strong>?page=processqueue </strong>and click the <strong>Reset Choice</strong> button.
+  <br/></p>
+<p><img src="static/set_up_remote_processing_from_phplistdotcom_10.png" alt=""/><br/></p>
+<p>&#160;
+</p>
+<p><span>Queue processing from a remote computer using the secret</span>&#160;
+</p>
+<p>This is essentially the same system as above, but you don't use the phplist.com service, you use another server of your choosing. Documentation for this is <a href="https://resources.phplist.com/system/remote_processing?s%5B%5D=secret">here</a>.&#160;
+</p>
+<h2>Automatic queue processing using the command line and Cron jobs
+</h2>
+<h3>Background
+  <br/></h3>
+<p>A more advanced phpList configuration is to configure automatic queue processing from the command line of the computer (shell terminal). These are the best, most powerful ways of sending an they have many advantages. However, setting them up can be complicated for a variety of reasons including:
+</p>
+<ul><li>Restrictions of hosting companies, such as GoDaddy, Hostgator and others.</li>
+  <li>Features of your virtual machine (VM) hosting account</li>
+  <li>(In)Ability to ssh into the server to test commands
+  <br/></li>
+  <li>PHP settings configured by your hosting company.
+  <br/></li>
+  <li>Working through a web based interface such as cpanel, or plesk to test and setup the required exact commands needed.
+  <br/></li>
+  <li>Limited access and permissions due to account type and user limitations.</li>
+  <li>Every hosting company sets this up a little differently, so requires a setup specific to your exact situation.
+  <br/></li>
+</ul><p>If you don't understand, or give up trying to understand all these details, look for qualified third party support people that can configure this at a nominal charge, and/or offer hosted solutions that include automatic queue processing.
+</p>
+<h3>The Command line
+</h3>
+<p> The core of setting up the automatic processing is the command line that will 'do the deed'.
+</p>
+<p><em><strong>For queue processing, the general format is:</strong></em>
+</p>
+<p> <span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1">/usr/bin/php /home/mydomain/lists/admin/index.php -pprocessqueue -c/home/mydomain/lists/config/config.php</span></span></span></span>
+</p>
+<p><strong><em>Breaking this down:</em></strong>
+</p>
+<p> <span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1"><strong>/usr/bin/php</strong>&#160; <em>This is the command that invokes php. Your path may vary, as well as the exact php command ( php-cli or php-cgi). The exact path to the php command will need to be changed to match your system.
+  <br/></em></span></span></span></span>
+</p>
+<p>
+  <br/><span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1"><strong>/home/mydomain/lists/admin/index.php</strong>&#160; <em>This is the fully qualified path to the index.php file in the /lists/admin directory of your phpList installation, as seen by the php command (above). Getting this right usually requires some experimenting, and/or asking your hosting provider. The '/home/mydomain' part will need to be changed to match the layout of your system.
+  <br/></em></span></span></span></span>
+</p>
+<p>
+  <br/><span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1"><strong>-pprocessqueue</strong>&#160; <em>This specifies the action that you want to perform (processqueue)</em></span></span></span></span>
+</p>
+<p>
+  <br/><span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1"><strong>-c/home/mydomain/lists/config/config.php</strong> <em>This is the fully qualified path to the config file with your settings. </em></span></span></span></span><span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1"><em>The '/home/mydomain' part will need to be changed to match the layout of your system.</em></span></span></span></span>
+</p>
+<p>Once you determine the exact command line that will process the queue on your machine, then you need to run that command periodically via a cron job (also called a 'scheduled task' in the cpanel interface).
+</p>
+<p>
+  <br/></p>
+<h3><span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1"> Setting up a cron job to periodically run the Command Line </span></span></span></span>
+</h3>
+<p>See the chapter "Setting up your Cron."
+</p>
+<p>
+  <br/></p></body></html>

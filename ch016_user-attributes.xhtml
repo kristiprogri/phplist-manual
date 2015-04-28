@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>User Attributes
+</h1>
+<p>phpList is pre-configured to deal with some data about your subscribers, for example email address, number of bounces (bouncecount) and their phpList ID number: these are called <strong>system values</strong>. <strong>Attributes</strong> are used for any other data you want to add to the system about your subscribers, usually demographic information.
+</p>
+<p><em/>Some common attributes are Name, Age, Gender and City. Some less common examples could be height, annual income, names of pets or kids and favourite genre of book. The attributes you might use depend entirely on your situation.
+</p>
+<p>Once you have collected/uploaded attribute data, it can be used to connect to your subscribers more directly and with better precision, by using <strong>placeholders</strong> and the <strong>segment plugin</strong>.
+</p>
+<p>There are two ways to create attributes:
+</p>
+<p>
+</p>
+<ul><li>Create them in bulk when you import a csv file</li>
+  <li>Create them manually from the configure attributes page</li>
+  <li>Edit them from the&#160;configure attributes page</li>
+</ul><p>This chapter will explain how to create attributes. How to use them is covered by the placeholders chapter and the segment plugin documentation.
+</p>
+<p>
+</p>
+<p><span>Creating Attributes when importing data</span>
+</p>
+<p>When you import complex data using the "csv with additional data" method, attributes can be easily created (in bulk) from column titles which are not already listed as an attribute.
+</p>
+<p><em>Do not create new attributes for email and other system attributes, you must map those to the pre-existing system attributes listed in the dropdown.</em>
+</p>
+<p>In the image below, five new attributes are being created, and<strong> EmailAddress </strong>is mapped to <strong>Email</strong>.
+</p>
+<p> <strong>Surname </strong>and <strong>Gender </strong>are quite standard attributes, however, the subscribers height in <strong>Centimetres</strong> is more unusual. phpList treats all these attributes in the same way:&#160;there are no restrictions on the subject matter of an attribute.
+</p>
+<p><img src="static/attributes_created_from_dataset_1.png" alt="import attributes in phpList" height="504" width="600"/></p>
+<p>Once an attribute has been created, any column headed&#160;by the attribute name in future csv files you import will be mapped to the attribute automatically. You will not need to create the attribute again.
+</p>
+<p><img src="static/attributes_map_automatically.png" alt="attribute mapping phpList" height="263" width="600"/></p>
+<p>If there is new data for a pre-existing subscriber, it will be integrated into the subscribers details by using email address or Foreign Key as a point of reference.
+</p>
+<p>In the image below, for example, we have subscribers on the system already, and now have added ShoeSize as a new attribute. Where our new dataset provides a shoe size for a pre-existing subscriber, this new attribute data is simply added to the details.
+</p>
+<p><img src="static/attributes_merge_automatically.png" alt="adding new attribute data to pre-existing subscriber phpList" height="192" width="600"/>&#160;
+</p>
+<h2>Creating and editing attributes on the configure attributes page
+</h2>
+<p>To create or edit an attribute manually, go to <strong>Config</strong> &gt; <strong>Configure attributes</strong> from the main menu.&#160;
+</p>
+<p><img src="static/attributes_from_main_menu_phpList.png" alt="config configure attributes main menu phpList" height="425" width="600"/><br/></p>
+<p>From there you can create a new attribute:
+</p>
+<p><img src="static/phpList_add_new_attributes.png" alt="adding a new attribute from attribute configuration page" height="421" width="538"/>&#160;
+</p>
+<p>You can also edit existing attributes:
+</p>
+<p><img src="static/phpList_editing_attributes.png" alt="edit exiting attributes phpList" height="494" width="534"/>&#160;
+</p>
+<p>You can
+</p>
+<p>
+</p>
+<ul><li>Specify/change the name</li>
+  <li>Choose/change the&#160;<strong>Type</strong>, which dictates the input method on your subscribe pages (see the example edit below)</li>
+  <li>Choose/change the&#160;<strong>Default Value</strong>, which dictates the standard value on the subscribe page (you may need to change this on the Subscribe page editor too)</li>
+  <li>Make the attribute required, so subscribers must give the information in order to sign up (<em>warning: mandatory fields may deter subscribers</em>)</li>
+</ul><p>Additionally you may,
+</p>
+<ul><li>tag them to delete one or more attributes</li>
+  <li>tag to merge several attributes together</li>
+</ul><p>
+</p>
+<h3>Example edit 1: changing the type from textline to select&#160;
+</h3>
+<p>In this example we will change the <strong>Type</strong> of the attribute for <strong>ShoeSize</strong>, which was automatically created during a csv file import, from <strong>textline </strong>to <strong>select</strong>. First we change the type to select using the dropdown menu, then we click the <strong>Save changes</strong> button at the bottom of the page.
+</p>
+<p><img src="static/attribute_selection.png" alt="change attribute type on configure attributes page" height="328" width="424"/>&#160;
+</p>
+<p>Then we click the <strong>edit values</strong> button which appears below the <strong>Type:</strong> dropdown.&#160;
+</p>
+<p><img src="static/attribute_selection_2_1.png" alt="changing attribute type" height="181" width="246"/></p>
+<p>We can then add all the shoe sizes we want.
+</p>
+<p>If you are editing an attribute that already has data in the system, some values may already be listed: if you try to add these again phpList will skip them rather than create a duplicate, so you can simply list all the values you want rather than search through.
+</p>
+<p><img src="static/attribute_selection_2.png" alt="adding new values to attribute" height="402" width="357"/>&#160;
+</p>
+<p>Then you can change the order of the value's for the attribute. This will affect the order in which they are listed &#160;in the dropdown on the subscribe page. In this example the shoe sizes had become very jumbled because some were already in the system and some were not, &#160;so we re-ordered them.
+</p>
+<p><img src="static/attribute_selection_3.png" alt="re ordering values in attribute" height="362" width="340"/>&#160;
+</p>
+<p>By changing the order the choice given to subscribers when they sign up is clearer.
+</p>
+<p><img src="static/attribute_selection_4.png" alt="attributes on a subscribe page" height="392" width="378"/>&#160;<span>&#160;</span>
+</p>
+<h2>Using Attributes&#160;
+</h2>
+<p>The primary use of attributes placeholders. Please see the placeholders chapter for information on how to use this. <a href="https://resources.phplist.com/plugin/segment" target="_blank">The segment plugin</a> and the <a href="https://resources.phplist.com/plugin/attributeselect">attribute select plugin</a> allow you to send emails to subscribers with certain attribute values.
+</p></body></html>

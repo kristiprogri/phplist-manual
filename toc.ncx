@@ -1,0 +1,308 @@
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta content="http://booki.cc/UNKNOWN/2015.04.27-10.54.43" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>phpList</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="chapter0" playOrder="1">
+      <navLabel>
+        <text>Introduction</text>
+      </navLabel>
+      <content src="ch001_system-overview.xhtml"/>
+      <navPoint id="chapter1" playOrder="1">
+        <navLabel>
+          <text>System Overview</text>
+        </navLabel>
+        <content src="ch001_system-overview.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter2" playOrder="2">
+        <navLabel>
+          <text>Case Studies</text>
+        </navLabel>
+        <content src="ch002_case-studies.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter3" playOrder="3">
+        <navLabel>
+          <text>About this manual</text>
+        </navLabel>
+        <content src="ch003_about-this-manual.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="chapter4" playOrder="4">
+      <navLabel>
+        <text>Basic Usage</text>
+      </navLabel>
+      <content src="ch005_logging-in.xhtml"/>
+      <navPoint id="chapter5" playOrder="4">
+        <navLabel>
+          <text>Logging In</text>
+        </navLabel>
+        <content src="ch005_logging-in.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter6" playOrder="5">
+        <navLabel>
+          <text>Adding your first Subscribers</text>
+        </navLabel>
+        <content src="ch006_adding-your-first-subscribers.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter7" playOrder="6">
+        <navLabel>
+          <text>Composing your first campaign</text>
+        </navLabel>
+        <content src="ch007_sending-your-first-campaign.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter8" playOrder="7">
+        <navLabel>
+          <text>Sending your first campaign</text>
+        </navLabel>
+        <content src="ch008_your-first-campaign.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter9" playOrder="8">
+        <navLabel>
+          <text>Basic Campaign Statistics</text>
+        </navLabel>
+        <content src="ch009_basic-campaign-statistics.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="chapter10" playOrder="9">
+      <navLabel>
+        <text>Growing and using complex lists</text>
+      </navLabel>
+      <content src="ch011_understanding-subscribers-and-lists.xhtml"/>
+      <navPoint id="chapter11" playOrder="9">
+        <navLabel>
+          <text>Understanding Subscribers and Lists</text>
+        </navLabel>
+        <content src="ch011_understanding-subscribers-and-lists.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter12" playOrder="10">
+        <navLabel>
+          <text>Creating your lists</text>
+        </navLabel>
+        <content src="ch012_creating-your-lists.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter13" playOrder="11">
+        <navLabel>
+          <text>Adding Subscribers to Lists</text>
+        </navLabel>
+        <content src="ch013_adding-subscribers-to-lists.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter14" playOrder="12">
+        <navLabel>
+          <text>Creating a subscribe page</text>
+        </navLabel>
+        <content src="ch014_creating-a-subscribe-page.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter15" playOrder="13">
+        <navLabel>
+          <text>Setting up your List Categories</text>
+        </navLabel>
+        <content src="ch015_setting-up-your-list-categories.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter16" playOrder="14">
+        <navLabel>
+          <text>User Attributes</text>
+        </navLabel>
+        <content src="ch016_user-attributes.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter17" playOrder="15">
+        <navLabel>
+          <text>Using placeholders</text>
+        </navLabel>
+        <content src="ch017_using-placeholders.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter18" playOrder="16">
+        <navLabel>
+          <text>Targeting your campaigns: list segmentation</text>
+        </navLabel>
+        <content src="ch018_targeting-your-campaigns.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter19" playOrder="17">
+        <navLabel>
+          <text>Subscriber Management: moving, deleting and transferring subscribes</text>
+        </navLabel>
+        <content src="ch019_subscriber-management-moving-deleting-and-transferring-subscribes.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="chapter20" playOrder="18">
+      <navLabel>
+        <text>Designing and assessing your campaigns</text>
+      </navLabel>
+      <content src="ch021_templates.xhtml"/>
+      <navPoint id="chapter21" playOrder="18">
+        <navLabel>
+          <text>Templates</text>
+        </navLabel>
+        <content src="ch021_templates.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter22" playOrder="19">
+        <navLabel>
+          <text>The Footer</text>
+        </navLabel>
+        <content src="ch022_the-footer.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter23" playOrder="20">
+        <navLabel>
+          <text>Creating a template</text>
+        </navLabel>
+        <content src="ch023_creating-a-template.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter24" playOrder="21">
+        <navLabel>
+          <text>Advanced Templating</text>
+        </navLabel>
+        <content src="ch024_advanced-templating.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter25" playOrder="22">
+        <navLabel>
+          <text>DIY: Super Simple Template</text>
+        </navLabel>
+        <content src="ch025_diy-super-simple-template.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter26" playOrder="23">
+        <navLabel>
+          <text>Subscribe page design and configuration</text>
+        </navLabel>
+        <content src="ch026_subscribe-page-design-and-configuration.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter27" playOrder="24">
+        <navLabel>
+          <text>Advanced Campaign Statistics</text>
+        </navLabel>
+        <content src="ch027_advanced-campaign-statistics.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="chapter28" playOrder="25">
+      <navLabel>
+        <text>Installing and Upgrading</text>
+      </navLabel>
+      <content src="ch029_installation.xhtml"/>
+      <navPoint id="chapter29" playOrder="25">
+        <navLabel>
+          <text>Installing phpList manually</text>
+        </navLabel>
+        <content src="ch029_installation.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter30" playOrder="26">
+        <navLabel>
+          <text>Installing using an auto-installer</text>
+        </navLabel>
+        <content src="ch030_instaling-using-an-auto-installer.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter31" playOrder="27">
+        <navLabel>
+          <text>Configuration; verify settings</text>
+        </navLabel>
+        <content src="ch031_configuration.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter32" playOrder="28">
+        <navLabel>
+          <text>Upgrading manually</text>
+        </navLabel>
+        <content src="ch032_upgrading.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter33" playOrder="29">
+        <navLabel>
+          <text>Upgrading an auto-installed installation</text>
+        </navLabel>
+        <content src="ch033_upgrading-an-auto-installed-installation.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter34" playOrder="30">
+        <navLabel>
+          <text>Common Installation Errors</text>
+        </navLabel>
+        <content src="ch034_common-installation-errors.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="chapter35" playOrder="31">
+      <navLabel>
+        <text>Sending</text>
+      </navLabel>
+      <content src="ch036_methods-of-sending-browser-cron-command-line.xhtml"/>
+      <navPoint id="chapter36" playOrder="31">
+        <navLabel>
+          <text>Methods of sending (Browser, Cron, Command-line)</text>
+        </navLabel>
+        <content src="ch036_methods-of-sending-browser-cron-command-line.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter37" playOrder="32">
+        <navLabel>
+          <text>Setting up your Cron</text>
+        </navLabel>
+        <content src="ch037_setting-up-your-cron.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter38" playOrder="33">
+        <navLabel>
+          <text>Scheduling</text>
+        </navLabel>
+        <content src="ch038_scheduling.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter39" playOrder="34">
+        <navLabel>
+          <text>Sending a web-page</text>
+        </navLabel>
+        <content src="ch039_sending-a-web-page.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter40" playOrder="35">
+        <navLabel>
+          <text>Sending plain text</text>
+        </navLabel>
+        <content src="ch040_sending-plain-text.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter41" playOrder="36">
+        <navLabel>
+          <text>Bounce Management</text>
+        </navLabel>
+        <content src="ch041_bounce-management.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="chapter42" playOrder="37">
+      <navLabel>
+        <text>Plugins</text>
+      </navLabel>
+      <content src="ch043_phplist-plugins.xhtml"/>
+      <navPoint id="chapter43" playOrder="37">
+        <navLabel>
+          <text>phpList Plugins</text>
+        </navLabel>
+        <content src="ch043_phplist-plugins.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="chapter44" playOrder="38">
+      <navLabel>
+        <text>Translations</text>
+      </navLabel>
+      <content src="ch045_setting-up-phplist-in-your-own-language.xhtml"/>
+      <navPoint id="chapter45" playOrder="38">
+        <navLabel>
+          <text>Setting up phpList in your own language</text>
+        </navLabel>
+        <content src="ch045_setting-up-phplist-in-your-own-language.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="chapter46" playOrder="39">
+      <navLabel>
+        <text>Troubleshooting</text>
+      </navLabel>
+      <content src="ch047_troubleshooting-techniques.xhtml"/>
+      <navPoint id="chapter47" playOrder="39">
+        <navLabel>
+          <text>Troubleshooting Techniques</text>
+        </navLabel>
+        <content src="ch047_troubleshooting-techniques.xhtml"/>
+      </navPoint>
+      <navPoint id="chapter48" playOrder="40">
+        <navLabel>
+          <text>Glossary</text>
+        </navLabel>
+        <content src="ch048_glossary.xhtml"/>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>
