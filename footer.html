@@ -57,11 +57,11 @@
             }
         });
     });
-$(function() {
+jQuery(function() {
     var uri =location.pathname.split("/")[2];
-  $('nav ul ul a[href^="' + uri + '"]').addClass('active');
-  $('nav ul ul a[href^="' + uri + '"]').parent().parent().addClass('active');
-  $('nav ul ul a[href^="' + uri + '"]').parent().parent().parent().addClass('active');
+  jQuery('nav ul ul a[href^="' + uri + '"]').addClass('active');
+  jQuery('nav ul ul a[href^="' + uri + '"]').parent().parent().addClass('active');
+  jQuery('nav ul ul a[href^="' + uri + '"]').parent().parent().parent().addClass('active');
 });
 </script>
 
