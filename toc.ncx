@@ -1,7 +1,7 @@
 <!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
 <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
   <head>
-    <meta content="http://booki.cc/UNKNOWN/2015.04.30-11.05.03" name="dtb:uid"/>
+    <meta content="http://booki.cc/UNKNOWN/2015.04.30-14.24.34" name="dtb:uid"/>
     <meta content="2" name="dtb:depth"/>
     <meta content="0" name="dtb:totalPageCount"/>
     <meta content="0" name="dtb:maxPageNumber"/>
@@ -239,57 +239,51 @@
       </navPoint>
       <navPoint id="chapter38" playOrder="33">
         <navLabel>
-          <text>Sending a web-page</text>
+          <text>Sending plain text</text>
         </navLabel>
-        <content src="ch038_sending-a-web-page.xhtml"/>
+        <content src="ch038_sending-plain-text.xhtml"/>
       </navPoint>
       <navPoint id="chapter39" playOrder="34">
         <navLabel>
-          <text>Sending plain text</text>
-        </navLabel>
-        <content src="ch039_sending-plain-text.xhtml"/>
-      </navPoint>
-      <navPoint id="chapter40" playOrder="35">
-        <navLabel>
           <text>Bounce Management</text>
         </navLabel>
-        <content src="ch040_bounce-management.xhtml"/>
+        <content src="ch039_bounce-management.xhtml"/>
       </navPoint>
     </navPoint>
-    <navPoint id="chapter41" playOrder="36">
+    <navPoint id="chapter40" playOrder="35">
       <navLabel>
         <text>Plugins</text>
       </navLabel>
-      <content src="ch042_phplist-plugins.xhtml"/>
-      <navPoint id="chapter42" playOrder="36">
+      <content src="ch041_phplist-plugins.xhtml"/>
+      <navPoint id="chapter41" playOrder="35">
         <navLabel>
           <text>phpList Plugins</text>
         </navLabel>
-        <content src="ch042_phplist-plugins.xhtml"/>
+        <content src="ch041_phplist-plugins.xhtml"/>
       </navPoint>
     </navPoint>
-    <navPoint id="chapter43" playOrder="37">
+    <navPoint id="chapter42" playOrder="36">
       <navLabel>
         <text>Translations</text>
       </navLabel>
-      <content src="ch044_setting-up-phplist-in-your-own-language.xhtml"/>
-      <navPoint id="chapter44" playOrder="37">
+      <content src="ch043_setting-up-phplist-in-your-own-language.xhtml"/>
+      <navPoint id="chapter43" playOrder="36">
         <navLabel>
           <text>Setting up phpList in your own language</text>
         </navLabel>
-        <content src="ch044_setting-up-phplist-in-your-own-language.xhtml"/>
+        <content src="ch043_setting-up-phplist-in-your-own-language.xhtml"/>
       </navPoint>
     </navPoint>
-    <navPoint id="chapter45" playOrder="38">
+    <navPoint id="chapter44" playOrder="37">
       <navLabel>
         <text>Troubleshooting</text>
       </navLabel>
-      <content src="ch046_troubleshooting-techniques.xhtml"/>
-      <navPoint id="chapter46" playOrder="38">
+      <content src="ch045_troubleshooting-techniques.xhtml"/>
+      <navPoint id="chapter45" playOrder="37">
         <navLabel>
           <text>Troubleshooting Techniques</text>
         </navLabel>
-        <content src="ch046_troubleshooting-techniques.xhtml"/>
+        <content src="ch045_troubleshooting-techniques.xhtml"/>
       </navPoint>
     </navPoint>
   </navMap>
