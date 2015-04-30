@@ -40,6 +40,8 @@ $contents = str_replace('<?xml version="1.0" encoding="UTF-8"?>
 $contents = str_replace('</head><body>','',$contents);
 $contents = str_replace('</body></html>','',$contents);
 
+$contents = str_replace('/phplist/_edit/','',$contents);
+
 $header = str_replace('[TITLE]',$title,$header);
 
 print $header;
