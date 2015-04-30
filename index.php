@@ -20,6 +20,8 @@ $tocFile = 'toc.ncx';
 $tocFile = simplexml_load_file(dirname(__FILE__).'/'.$tocFile);
 $title = $tocFile->docTitle->text;
 $toc = extractMenu($tocFile->navMap->navPoint);
+$chapter = 0;
+$chapterTitle = '';
 
 $header = file_get_contents(dirname(__FILE__).'/'.$headerFile);
 $footer = file_get_contents(dirname(__FILE__).'/'.$footerFile);
@@ -30,7 +32,17 @@ $file = $_SERVER['REQUEST_URI'];
 $file = basename($file);
 if (is_file(dirname(__FILE__).'/'.$file)) {
   $contents = file_get_contents(dirname(__FILE__).'/'.$file);
+  if (preg_match('/^ch(\d+)_(.*)\.xhtml$/',$file, $regs)) {
+    $chapter = $regs[1];
+    $chapterTitle = $regs[2];
+    $chapterTitle = str_replace('-',' ',$chapterTitle);
+    $chapterTitle = ucfirst($chapterTitle);
+    $chapterTitle = str_ireplace('phplist','phpList',$chapterTitle);
+  }
 } 
+if (!empty($chapter)) {
+  $title = sprintf('chapter %d - %s',$chapter,htmlspecialchars($chapterTitle));
+}
 
 $contents = str_replace('<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
