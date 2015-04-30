@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Upgrading a manual installation
+</h1>
+<p>You should upgrade your phpList installation frequently. By keeping up-to-date you can take advantage of the latest features in phpList which will make your work easier and help you advance your work.
+</p>
+<p>Often, a new version will include security updates which are important to protect your data, and the personal details of your subscribers.&#160;</p><em>
+
+Upgrading from phpList 2 (orange) to 3 (grey) works well - if you are still using phpList 2 please upgrade as soon as as you can.</em><h2>Overview
+  <br/></h2>
+<p>If you installed phpList manually, this is the correct installation method for you. The process consists of the following steps:
+</p>
+<ul><li>Download the new version</li>
+  <li>Unzip the files
+  <br/></li>
+  <li>Back up your database</li>
+  <li>Back up your config.php</li>
+  <li>Replace old version on your server with new version</li>
+  <li>Replace new config.php with your back up</li>
+  <li>Upgrade database with automated updater
+  <br/></li>
+</ul><h2>When to update
+</h2>
+<p>You can sign up for email notification about new versions of phpList by <a target="_blank" href="http://announce.phplist.org/?p=subscribe&amp;id=1">subscribing to our announcements list</a>.
+</p>
+<p>When normal configuration/settings have been maintained, phpList will check for updates every 7 days. You can adjust the frequency of checks on the <strong>Config</strong> &gt; <strong>Settings</strong> page, accessed via the main menu.
+</p>
+<p>When a new version had been released you will receive a notice on your dashboard.
+</p>
+<p>You can navigate to your <strong>Dashboard</strong> from any page in phpList by clicking the link at the top of the <strong>Navigation</strong> sidebar.
+  <br/></p>
+<p><img alt="phpList dashboard" src="static/phpList_dashboard.png" width="346" height="225"/></p>
+<p>
+</p>
+<p>If you see a notification saying "<strong>A new version of phpList is available!</strong>" then it's time to upgrade.
+</p>
+<h2>Downloading the new version
+</h2>
+<p>From your Dashboard notification, click <strong>Download</strong>.
+  <br/></p>
+<p> <img alt="do I need to upgrade phpList? YES!" src="static/new_version_notice_phpList_dashboard.png" width="481" height="391"/></p>
+<p>This will take you to phpList.com/download, where you click<strong> DOWNLOAD ZIP</strong> or <strong>DOWNLOAD TGZ</strong>.
+  <br/></p>
+<p> <img alt="phpList upgrade download" src="static/new_version_download_phplist.png" width="462" height="297"/></p>
+<p>You will be redirected to SourceForge, where your download will start after a few seconds.
+</p>
+<p>Choose a place on your computer to store the file and click <strong>Save</strong> (your own operating system/browser may work differently).
+</p>
+<p><img alt="phpList upgrade download new version" src="static/new_version_download_phplist_2.png" width="600" height="486"/></p>
+<p>
+</p>
+<h2> Unzipping phpList
+</h2>
+<p>Once you have downloaded phpList to your computer, unzip it. You can usually do this by right clicking and choosing <strong>Extract Here</strong> (Linux, as in screenshot), double clicking the folder (mac) or right click "extract all" (windows).
+</p>
+<p>&#160;<img alt="phpList upgrade new version extract files" src="static/new_version_download_phplist_3.png" width="523" height="549"/></p>
+<p>Next you must back up your installation, this is a vital step as it will keep your data safe is anything goes wrong with the upgrade process.
+</p>
+<h2>Back up your database
+  <br/></h2>
+<p>The method of doing this will depend on your hosting provider. In this example we use cpanel. Click on the <strong>MySQL Databases</strong> icon.
+  <br/></p>
+<p><img alt="phpList upgrade backup database cpanel" src="static/database_backup_phpList_1.png" width="423" height="317"/>&#160;
+</p>
+<p>Locate your phpList database and click <strong>Backup</strong>.
+  <br/></p>
+<p><img alt="phpList upgrade backup database cpanel" src="static/database_backup_phpList_2.png" width="600" height="257"/></p>
+<p>
+</p>
+<p>Choose to <strong>Save File</strong> and click <strong>OK</strong>.
+</p>
+<p> <img alt="phpList upgrade backup database save" src="static/database_backup_phpList_3.png" width="501" height="368"/></p>
+<p>Choose a location on your computer to save your database too, and click <strong>Save</strong>.
+  <br/></p>
+<p><img alt="phpList upgrade backup database save" src="static/database_backup_phpList_4.png" width="551" height="443"/>&#160;
+</p>
+<p>
+</p>
+<h2>Backing up your config.php
+  <br/></h2>
+<p>You also need to back up your config.php., which is usually located at <strong>public_html/lists/config/config.php</strong> on your server. <em>You will need this file again later.</em>
+  <br/></p>
+<p>You can do this using an ftp client. In screenshot below we used filezilla and the config.php file was simply dragged and dropped onto into the backup folder.
+  <br/></p>
+<p><img alt="phpList upgrade backup config.php" src="static/config_backup_phpList.png" width="458" height="516"/>&#160;
+</p><em>If you have customized/altered any other files for some non-standard scenario you should back them up too.</em>
+<h2>Upload the new version
+  <br/></h2>
+<p>Next you need to upload the new version files to replace the files from the previous version. You can do this using an ftp client. This is similar to installing for the first time. In the screenshots below we used filezilla.
+</p>
+<p>First we selected all the files within the <strong>public_html/lists</strong> folder on our pc, then we uploaded them to the <strong>public_html/lists</strong> folder on our server.
+  <br/></p>
+<p><img alt="phpList upgrade ftp" src="static/phpList_upgrade_1.png" width="448" height="549"/>&#160;
+</p>
+<p>You need chose to overwrite all files.
+  <br/></p>
+<p><img alt="phpList upgrade upload files via ftp replace all / overwrite" src="static/phpList_upgrade_2.png" width="316" height="366"/>&#160;
+</p>
+<h2>Replace new config.php with your own
+</h2>
+<p> Now you need to replace the new <strong>config.php</strong> file with the one you backed-up earlier, which has your system details already set up.
+</p>
+<p>We did this using an ftp client.
+</p>
+<p><img alt="phpList upgrade replace config.php" src="static/phpList_upgrade_3.png" width="497" height="410"/>&#160;
+</p>
+<h2>Update your database
+</h2>
+<p>Finally, log in to your instillation (http://yourdomain.com/lists/admin).
+</p>
+<p>You will see a big red box at the top of the screen telling you to upgrade your database. Click <strong>Upgrade</strong>.
+  <br/></p>
+<p><img alt="phpList upgrade database error" src="static/phpList_upgrade_4.png" width="613" height="292"/></p>
+<p>
+</p>
+<p>Read the text, and click <strong>Upgrade</strong>.&#160;
+  <br/></p>
+<p>
+</p>
+<p><img alt="phpList upgrade" src="static/phpList_upgrade_5.png" width="495" height="338"/></p>
+<p>You will see a progress bar, and when the process has finished you will be told that you have successfully upgraded.
+</p>
+<p><img alt="phpList upgrade success" src="static/phpList_upgrade_6.png" width="174" height="64"/><br/></p>
+<br/><p align="left">
+</p></body></html>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Sending plain text
+</h1>
+<p>phpList always generates a plain text version of your campaign, which is then included in the html campaigns as a matter of course. This is part of the normal working of email functionality. phpList also gives you two additional features
+</p>
+<p>
+</p>
+<ul><li>Your subscribers can choose to receive plain text emails only&#160;</li>
+  <li>You can edit the plain text version to improve it</li>
+</ul><p>You can see the plain text version embedded in the source of your email by clicking <strong>View Source</strong> in your email client (exact instructions vary wildly)
+</p>
+<p><img src="static/plain_text_view_source.png" alt="view source of email thunderbird" height="297" width="600"/><br/></p>
+<p>As you can see there is a plain text version in and amongst the html and other code.
+</p>
+<p><img src="static/plain_text_view_source_2.png" alt="view source shows plain text version embedded in body of email" height="348" width="444"/>&#160;
+</p>
+<h2>Why edit the plain text version?
+</h2>
+<p>
+</p>
+<p>The automatically generated plain text version may not be very attractive. It good practice to provide a quality plain text version because it
+</p>
+<p>
+</p>
+<ul><li>displays better in some email software</li>
+  <li>makes your emails more accessible for people with visual impairments</li>
+</ul><p>To assess the state of your default plain text version, you can click to view your emails only in plain text. In a desktop email client this is usually <strong>View</strong> &gt; <strong>Message Body As</strong> &gt; <strong>Plain text.</strong>
+</p>
+<p><img src="static/plain_text_view_source_4.png" alt="view message body as plain text thunderbird" height="227" width="382"/>&#160;
+</p>
+<p>You can then see your email as it would be displayed to someone who is only able to receive plain text messages.
+</p>
+<p><img src="static/plain_text_view_source_5.png" alt="phpList automatically included plain text version" height="340" width="372"/>&#160;
+</p>
+<p>To improve this email, and send a version formatted especially for these subscribers only takes a few extra moments and, as you can see, provides a much better quality of message.
+</p>
+<p><img src="static/plain_text_view_source_6_1.png" alt="phpList a well formatted plain text email campaign" height="326" width="306"/>&#160;
+</p>
+<p>
+  <br/></p>
+<p><span>Enabling plain text editing</span>
+</p>
+<p>Some installations do not show the <strong>Text</strong> tab, which is used to manually configure your text only email content. If your tabs look like this, we'll need to change the configuration:
+</p>
+<p>&#160;<img src="static/unactivated_manual_text_tab.png" alt=""/></p>
+<p> To activate the <strong>Text</strong> tab in your installation, add the following lines to your config.php file:
+</p>
+<p>
+  <br/># Manual text part, will give you an input box for the text version of the message
+  <br/># instead of trying to create it by parsing the HTML version into plain text
+  <br/>define('USE_MANUAL_TEXT_PART',1);
+</p>
+<p><img src="static/activate_manual_text_tab.png" alt=""/><br/></p>
+<p>
+  <br/></p>
+<p>An extra tab will now display in your campaign workflow.&#160;
+</p>
+<p><img src="static/manual_text_tab_actiaved.png" alt=""/>&#160;
+</p>
+<h2>Create your plain text version
+  <br/></h2>
+<p>Once you've created your HTML version in the <strong>Content</strong> tab (tab 1) click the <strong>Next </strong>button<strong>.</strong>
+</p>
+<p><img alt="phpList click next" src="/phplist/_edit/static/click_next_1.png" height="177" width="296"/>&#160;
+</p>
+<p>You should now be in the second tab, <strong>Text</strong>.
+</p>
+<p><img src="static/manual_text_tab_actiaved.png" alt=""/><br/></p>
+<p>You can manually compose the plain text version, or you can generate it automatically by using the <strong>generate from HTML </strong>button<strong>.&#160;</strong><em>Some special characters in your html email may cause this automatic generation to fail. You can paste your text into this tab if your need to.</em>
+</p>
+<p><img src="static/generate_plain_test_version_phpList.png" alt="phList generate (plain text) from html button" height="223" width="323"/></p>
+<p>
+</p>
+<p>The empty <strong>Plain text version of message</strong> box will now contain a text only version of your html message.
+</p>
+<p>The content should be the same as the html version however images in the html version will automatically be removed and replaced by text descriptions urls are replaced by links. You can edit the message further if required, to make it as attractive and legible as possible.
+</p>
+<p>Once you are happy with your plain text version, click <strong>Save and continue editing</strong> button, at the bottom of the text editing box, and carry on with testing and sending your campaign.
+</p>
+<p><img src="static/Save_and_continue_editing.png" alt="phpList save and continue editing" height="87" width="331"/>&#160;
+</p>
+<p>When you send tests, you will receive two emails, one text and one html.
+</p>
+<h2><img src="static/examine_test_emails.png" alt="plain text v html" height="211" width="600"/></h2>
+<p>
+</p>
+<h2>Format tab: ONLY send plain text?
+</h2>
+<p>On the format tab there is a radio button for sending in either HTML or Text. Typically you will want to select the "HTML" radio button, which sends a version of the message that each subscriber specified when they joined your list.
+</p>
+<p>However,<em>&#160;if&#160;you want to send the text version of the message, select the "Text" radio button.</em> This&#160;will override the user preferences, and send all subscribers the text version of the email.
+</p>
+<p>
+</p>
+<p><span/><img src="static/send_as_html_or_text.png" alt="text only email radio button" height="282" width="414"/><span>&#160;</span>
+</p>
+<p>
+  <br/></p>
+<p>
+</p>
+<p>&#160;
+</p></body></html>

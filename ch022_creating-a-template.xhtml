@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Creating a template
+</h1>
+<h2>Creating your template
+</h2>
+<h3>
+</h3>
+<p>There are lots of ways to create your template. You could
+</p>
+<ul><li>Design and write your own</li>
+  <li>Pay someone to do this for you&#160;
+  <br/></li>
+  <li>Modify a generic/Open Source template that you have bought or "recycled"</li>
+  <li>Use the super-simple DIY template in the next chapter.</li>
+</ul><p>Here are some tips to help you set up your template for use with phpList.
+</p>
+<p><em>If you don't understand the information in this chapter and you don't have anyone to help you with your template, then skip to the next chapter for a super simple template.</em>
+</p>
+<h3>The Basics&#160;
+  <br/></h3>
+<p>You should use inline styles, and unless you have configured phpList especially with a plugin,&#160;<em>you must use a single column template.</em>
+</p>
+<p>If you choose a responsive template, your campaign editor should not use images with a width larger than a smartphone screen (max 320 by 480 pixels).
+</p>
+<p>The <em>footer </em>in phpList is quite specialized and is described in a separate chapter. If you plan to have a footer in your design, please read the footer chapter before you start work.
+  <br/></p>
+<h3>Logo: upload or remote link?
+</h3>
+<p>When you are designing or modifying your template, you need to decide if you will include your logo in the campaigns as an attachment or use a remote image. If you include your logo as an attachment it will always display to the recipient.
+</p>
+<p><img src="/phplist/_edit/static/image_included.png" alt="an uploaded logo is included in your campaign" height="225" width="424"/>&#160;
+  <br/></p>
+<p>If you use a remote link, however, the image<em>&#160;</em>will only display when the subscriber gives permission<em>&#160;(</em>in most email and webmail clients).
+</p>
+<p><img src="/phplist/_edit/static/image_remote_blocked.png" alt="a remotely hosted logo is not included in your campaign" height="265" width="424"/>&#160;
+</p>
+<p>If you decide you upload your image then leave the local link (or just a use a "broken link") and you will be prompted to upload the image when you are adding your template to phpList.
+</p>
+<h3>A mandatory placeholder in the body&#160;
+  <br/></h3>
+<p>You must include some strings that phpList will replace during the sending stage.
+</p>
+<h3>[CONTENT]&#160;
+  <br/></h3>
+<p>The obligatory string is [CONTENT]. This will be replaced with the content of your message when you send your campaign.
+</p>
+<p><img src="/phplist/_edit/static/content_placeholder.png" alt="the content placeholder in phpList [content]" height="173" width="455"/>&#160;
+  <br/></p>
+<h2>Adding your template to phpList
+</h2>
+<p>To add a template to phpList, go to&#160;<strong>Campaigns</strong>&#160;&gt;&#160;<strong>Manage campaign templates</strong>&#160;from the main menu.
+</p>
+<p><img src="/phplist/_edit/static/phpList_add_a_template.png" alt="manage campaign templates phpList" height="222" width="608"/><br/></p>
+<p>You will then see a list of templates already in the system. By default there is one template, the system template (which styles things like the confirm subscription emails).
+</p>
+<p><img src="/phplist/_edit/static/phpList_add_a_template_2.png" alt="add a new template" height="297" width="600"/><br/></p>
+<p>Click<strong>&#160;Add new template</strong>.&#160;
+  <br/></p>
+<h2>Name your template
+</h2>
+<p>First, give your template a Title. This will display in the list of templates to choose from during the campaign composition stage, so it is important that the name makes sense from the perspective of the person writing the campaigns.
+</p>
+<p>In this case we called the template&#160;<strong>phpList announcements</strong>, because it is the template we used when we announce a new version of phpList. We have different templates for community news and phpList hosted special offers, for example.
+</p>
+<p><img src="/phplist/_edit/static/phpList_add_a_template_3.png" alt="name your template and upload it" height="251" width="600"/></p>
+<h4>Upload your file&#160;
+</h4>
+<p>To add your template you can paste the html into the editor, or upload it as a file.
+</p>
+<p>In this example we are uploading it.
+</p>
+<p>Click the&#160;<strong>Browse</strong>&#160;button, locate the template file on your computer and click&#160;<strong>Open</strong>. The file name will then appear next to the&#160;<strong>Browse</strong>&#160;button (as is shown in the image above).
+</p>
+<h4>Save your template&#160;
+</h4>
+<p>Scroll to the bottom of the page and click&#160;<strong>Save changes</strong>, using the checking tools if you wish.
+</p>
+<p><img src="/phplist/_edit/static/phpList_add_a_template_4.png" alt="save your new template" height="257" width="461"/></p>
+<p>
+</p>
+<h4>Upload your logo?&#160;
+</h4>
+<p>
+</p>
+<p>The next screen gives you an opportunity to upload your template images, if you have any. This will usually be a logo. In this case the logo is hosted remotely and so no image is listed to upload.
+</p>
+<p><img src="/phplist/_edit/static/add_image.png" alt="add images to your template, or not" height="349" width="486"/></p>
+<p>Click&#160;<strong>Save images</strong>.
+</p>
+<p>Your template will now be added to your list of&#160;<strong>Exiting templates</strong>.
+</p>
+<p>If you wish to set this template as the default for all campaigns, you can check the radio button under <strong>CAMPAIGN DEFAULT</strong>.&#160;
+  <br/></p>
+<p><img src="/phplist/_edit/static/template_list_1.png" alt="a new template" height="167" width="600"/>&#160;&#160;
+</p><span>Default's and settings&#160;</span>
+<p>There are some default settings for templates and footers at&#160;<strong>Config</strong>&#160;&gt;&#160;<strong>Settings</strong>&#160;under&#160;<strong>campaign settings</strong>.&#160;
+</p>
+<p>For example you can choose which template to be used by default by referring to it by it's ID.
+</p>
+<p><img src="/phplist/_edit/static/footer_8.png" alt="specify default template phpList" height="272" width="345"/>&#160;
+</p>
+<p>The ID of the template can be found next to the template name when you go&#160;<strong>Campaigns</strong>&#160;&gt;&#160;<strong>Manage campaign templates</strong>&#160;from the main menu.
+</p>
+<p><img src="/phplist/_edit/static/footer_7.png" alt="template ID phpList" height="291" width="430"/>&#160;
+</p>
+<h1>Using your template
+</h1>
+<p>During campaign composition, use headings and other formatting as normal. You do not need to apply any additional styling such as text colour, if those elements are dealt with by your template.
+</p>
+<p><img src="/phplist/_edit/static/pre-template_phplist.png" alt="compose ready for template" height="294" width="455"/></p>
+<p>In the<strong>&#160;Format</strong>, of the send campaign workflow, select your template from the&#160;<strong>Use template&#160;</strong>dropdown.&#160;
+  <br/></p>
+<p><img src="/phplist/_edit/static/choose_template_phplist_1.png" alt="format tab of compose process choose template" height="353" width="417"/>&#160;&#160;
+  <br/></p>
+<p>The template, and theme, is then applied during sending.
+</p>
+<p><img src="/phplist/_edit/static/post-template_phplist.png" alt="template is applied" height="367" width="370"/>&#160;&#160;&#160;
+</p></body></html>
