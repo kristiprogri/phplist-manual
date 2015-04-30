@@ -7,7 +7,7 @@
 </p>
 <p>In our early chapters, we have assumed that you are sending from the browser, to a small list, and that your phpList has been configured already (or that it just so happened to work well out-of-the-box).&#160;
 </p>
-<p><span>How sending works&#160;</span>
+<p>How sending works&#160;
 </p>
 <p>Once your campaign is ready, you need to tell phpList to send the campaign. There are two steps to this:
 </p>
@@ -89,7 +89,7 @@
 <p><img src="static/set_up_remote_processing_from_phplistdotcom_10.png" alt=""/><br/></p>
 <p>&#160;
 </p>
-<p><span>Queue processing from a remote computer using the secret</span>&#160;
+<p>Queue processing from a remote computer using the secret&#160;
 </p>
 <p>This is essentially the same system as above, but you don't use the phplist.com service, you use another server of your choosing. Documentation for this is <a href="https://resources.phplist.com/system/remote_processing?s%5B%5D=secret">here</a>.&#160;
 </p>
@@ -118,28 +118,28 @@
 </p>
 <p><em><strong>For queue processing, the general format is:</strong></em>
 </p>
-<p> <span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1">/usr/bin/php /home/mydomain/lists/admin/index.php -pprocessqueue -c/home/mydomain/lists/config/config.php</span></span></span></span>
+<p> /usr/bin/php /home/mydomain/lists/admin/index.php -pprocessqueue -c/home/mydomain/lists/config/config.php
 </p>
 <p><strong><em>Breaking this down:</em></strong>
 </p>
-<p> <span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1"><strong>/usr/bin/php</strong>&#160; <em>This is the command that invokes php. Your path may vary, as well as the exact php command ( php-cli or php-cgi). The exact path to the php command will need to be changed to match your system.
-  <br/></em></span></span></span></span>
+<p> <strong>/usr/bin/php</strong>&#160; This is the command that invokes php. Your path may vary, as well as the exact php command ( php-cli or php-cgi). The exact path to the php command will need to be changed to match your system. <em>
+  <br/></em>
 </p>
 <p>
-  <br/><span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1"><strong>/home/mydomain/lists/admin/index.php</strong>&#160; <em>This is the fully qualified path to the index.php file in the /lists/admin directory of your phpList installation, as seen by the php command (above). Getting this right usually requires some experimenting, and/or asking your hosting provider. The '/home/mydomain' part will need to be changed to match the layout of your system.
-  <br/></em></span></span></span></span>
+  <br/><strong>/home/mydomain/lists/admin/index.php</strong>&#160; This is the fully qualified path to the index.php file in the /lists/admin directory of your phpList installation, as seen by the php command (above). Getting this right usually requires some experimenting, and/or asking your hosting provider. The '/home/mydomain' part will need to be changed to match the layout of your system. <em>
+  <br/></em>
 </p>
 <p>
-  <br/><span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1"><strong>-pprocessqueue</strong>&#160; <em>This specifies the action that you want to perform (processqueue)</em></span></span></span></span>
+  <br/><strong>-pprocessqueue</strong>&#160; This specifies the action that you want to perform (processqueue)
 </p>
 <p>
-  <br/><span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1"><strong>-c/home/mydomain/lists/config/config.php</strong> <em>This is the fully qualified path to the config file with your settings. </em></span></span></span></span><span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1"><em>The '/home/mydomain' part will need to be changed to match the layout of your system.</em></span></span></span></span>
+  <br/><strong>-c/home/mydomain/lists/config/config.php</strong> This is the fully qualified path to the config file with your settings. The '/home/mydomain' part will need to be changed to match the layout of your system.
 </p>
 <p>Once you determine the exact command line that will process the queue on your machine, then you need to run that command periodically via a cron job (also called a 'scheduled task' in the cpanel interface).
 </p>
 <p>
   <br/></p>
-<h3><span class="sc1"><span class="sc1"><span class="sc1"><span class="sc1"> Setting up a cron job to periodically run the Command Line </span></span></span></span>
+<h3>Setting up a cron job to periodically run the Command Line
 </h3>
 <p>See the chapter "Setting up your Cron."
 </p>
