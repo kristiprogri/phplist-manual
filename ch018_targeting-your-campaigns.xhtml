@@ -3,5 +3,145 @@
     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Targeting your campaigns
 </h1>
-<p>In this example, Ethical Pets are sending campaign about a special offer on dog treats, and they are targeting the campaign by only sending it to customers who have previously bought products for a dog.&#160;</p><p>There are several reasons for doing this;</p><p/><ul><li>It enables more campaigns to be sent overall, which increases the impact of their email marketing</li><li>But most people will receive fewer campaigns, so they are not inundated</li><li>Campaigns will be more relevant to readers</li><li>Campaigns are quicker and easier to write, because they only need to be interesting to the target audience and to to everyone</li><li>It is easier to measure the impact of the campaign</li></ul><p>In this campaign only Only 35% of the total number of subscribers were emailed. Without segmentation either a large number of people would have received a campaign with little relevance to them or Ethical Pets would have needed to spend time tying to make the campaign have a broader appeal.&#160;</p><p>The overall consequences of segmentation should be&#160;</p><p/><ul><li>Happier customers</li><li>Fewer unsubscribes</li><li>More motivated marketeers</li><li>Improved sales/responses to calls to action</li><li>Improved customer loyalty/retention over time</li></ul><div><p><span>Segmenting your list</span></p></div><p>The method of segmentation depends on</p><p/><ul><li>The quality of your data</li><li>Where and how your data is stored</li><li>What tools you have to segment it</li></ul><p/><p>In this example the segmentation was achieved using a Prestashop plugin, which allows the exporting of customer details based on category of product bought.</p><p><img src="static/segementation_prestashop_export.png" alt="segmenting plugin prestashop" width="603" height="546" class=""/></p><p>Unfortunately the Prestashop core does not provide very detailed data exports, and so a paid plugin was needed. </p><p>In other situations it may be possible to segment a list using;</p><p/><ul><li>spreadsheet software</li><li>database software</li><li>the phpList segment plugin, to split the list using attributes</li></ul><p/><h2>Adding a segmented list to phpList</h2><p>A suggested methodology for adding a segmented list to phpList is;</p><p/><ul><li>Synchronise your data - upload any new subscribers to phpList</li><li>Create a new list</li><li>Copy and paste the segmented emails into the new list</li><li>phpList will pull in the rest of the data/attributes for you from the subscriber profiles</li></ul><div><p>Having synchronised the data by uploading the latest data using a csv import, Ethical Pets went on to creating a new list.</p></div><p>In this case a new list <strong>Dog category purchasers</strong> was created (note: a private list, not public) &#160;</p><p><img src="static/segmentation_dog_category.png" alt="creating a segmented list phpList" width="392" height="427" class=""/><br/></p><p>Then the emails from the prestashop segmentation export were pasted in:</p><p><img src="static/segementation_import_emails_paste.png" alt="import emails to segmented list" width="387" height="460" class=""/>&#160;</p><p>The segmented list of subscribers are now all members of the list.</p><p><img src="static/segementation_import_emails_result.png" alt="emails on a list" width="600" height="503" class=""/></p><h2>Sending to a segmented list</h2><p>The process for sending to segmented lists is the same as sending to large, unsegmented lists. You simply select the list on the <strong>Lists</strong> tab of the campaign workflow. In this example we have put the segmented list in a category too.</p><p><img src="static/send_to_segment.png" alt="sending to a segment" width="600" height="281" class=""/>&#160;</p><h2>Excluding a list</h2><p>If you are sending a lot of mails and there is a chance that subscribers who are in multiple segments might be receiving a lot of campaigns, you could consider using the exclude list functionality.</p><p>For example, if Ethical Pets wants to send a campaign to a list of cat product purchasers just a few days after they sent the email to dog product purchasers, they could exclude anyone on the dog list from receiving the cat related campaign. </p><p>While this involves prioritising which campaign is most important, the dog or the cat one, it means that the people who buy both dog and cat products are not receiving too many campaigns in total.</p><h3>Activate the list exclude feature&#160;</h3><p>You need to use&#160;</p><p>define("USE_LIST_EXCLUDE",1);&#160;</p><p>in your config.php</p><p><img src="static/exclude_lists.png" alt="enable exclude list feature in config.php" width="558" height="299" class=""/>&#160;</p><p>The line of code and comments can be found in the extended config and copied over. If you do not know how to do this, you can find more information in the manual installation chapter.</p><h3>Using the list exclude feature</h3><p>In this example, Ethical Pets have send an email to the cat product purchasers segment but excluded the dog purchasers segment. During sending phpList checks if the subscriber on the cat list is also on the dog list, if they are, the email is not sent to them.</p><p><img src="static/exclude_lists_2.png" alt="using the exclude list functionality phpList" width="600" height="602" class=""/>&#160;</p><p><span>Additional ways to segment a list</span></p><div><p>Here are a few ideas for ways you could segment your lists:</p><p/><ul><li>Subscriber location</li><li>Subscriber interests</li><li>Subscriber demographic (gender, age, shoe size etc)</li><li>Subscriber actions (purchase, abandoned cart, signed petition, recent comment etc)</li><li>Subscriber status (new to list, long-time member)</li><li>Subscriber preference: ask your subscribers how often or when they would like to receive emails from you using an attribute on your subscribe page.</li></ul><p/><h2>Additional benefits of segmentation&#160;</h2><p>There are many benefits to list segmentation</p><p/><ul><li>You can a/b test aspects of your email, for example the tone/style/grammar of the subject line</li><li>You can automate transactional messages, for example, messages offering help to customers who abandoned a cart. (You can use a recurring campaign for this)</li><li>You can tailor very specific emails, for example about events, to those who live in the location of those events</li></ul><p>&#160;</p><div><p>&#160;</p></div><p/></div>
-<p/></body></html>
+<p>In this example, Ethical Pets are sending out a campaign about a special offer on dog treats.&#160; They are targeting the campaign by only sending it to customers who have previously bought products for a dog.&#160;
+</p>
+<p>There are several reasons for doing this:
+</p>
+<p>
+</p>
+<ul><li>It enables more campaigns to be sent overall, which increases the impact of email marketing</li>
+  <li>Most people will receive fewer campaigns, so they are not inundated</li>
+  <li>Campaigns will be more relevant to readers</li>
+  <li>Campaigns are quicker and easier to write, because they only need to be interesting to the target audience and not to everyone</li>
+  <li>It is easier to measure the impact of the campaign</li>
+</ul><p>In this campaign only 35% of the total number of subscribers were emailed. Without segmentation either a large number of people would have received a campaign with little relevance to them or Ethical Pets would have needed to spend time tying to make the campaign have a broader appeal.&#160;
+</p>
+<p>The overall consequences of segmentation should be:
+  <br/></p>
+<p>
+</p>
+<ul><li>Happier customers</li>
+  <li>Fewer unsubscribes</li>
+  <li>More motivated marketeers</li>
+  <li>Improved sales/responses to calls to action</li>
+  <li>Improved customer loyalty/retention over time</li>
+</ul><p>&#160;
+</p>
+<div>
+  <p><span>Segmenting your list</span>
+  </p>
+</div>
+<p>The method of segmentation depends on,
+</p>
+<p>
+</p>
+<ul><li>The quality of your data</li>
+  <li>Where and how your data is stored</li>
+  <li>What tools you have to segment it</li>
+</ul><p>
+</p>
+<p>In this example the segmentation was achieved using a Prestashop plugin, which allows the exporting of customer details based on the category of product bought.
+</p>
+<p><img src="static/segementation_prestashop_export.png" alt="segmenting plugin prestashop" height="546" width="603"/></p>
+<p>Unfortunately the Prestashop core does not provide very detailed data exports, and so a paid plugin was needed.
+</p>
+<p>In other situations it may be possible to segment a list using:
+</p>
+<p>
+</p>
+<ul><li>spreadsheet software</li>
+  <li>database software</li>
+  <li>the phpList segment plugin, to split the list using attributes</li>
+</ul><p>
+</p>
+<h2>Adding a segmented list to phpList
+</h2>
+<p>A suggested methodology for adding a segmented list to phpList is:
+</p>
+<p>
+</p>
+<ul><li>Synchronise your data - upload any new subscribers to phpList</li>
+  <li>Create a new list</li>
+  <li>Copy and paste the segmented emails into the new list</li>
+  <li>phpList will pull in the rest of the data/attributes for you from the subscriber profiles</li>
+</ul><div>
+  <p>Having synchronised the data by uploading the latest data using a csv import, Ethical Pets went on to create a new list.
+  </p>
+</div>
+<p>In this case a new list <strong>Dog category purchasers</strong> was created (note: a private list, not public) &#160;
+</p>
+<p><img src="static/segmentation_dog_category.png" alt="creating a segmented list phpList" height="427" width="392"/><br/></p>
+<p>Then the emails from the prestashop segmentation export were pasted in:
+</p>
+<p><img src="static/segementation_import_emails_paste.png" alt="import emails to segmented list" height="460" width="387"/>&#160;
+</p>
+<p>The segmented list of subscribers are now all members of the list.
+</p>
+<p><img src="static/segementation_import_emails_result.png" alt="emails on a list" height="503" width="600"/></p>
+<h2>Sending to a segmented list
+</h2>
+<p>The process for sending to segmented lists is the same as sending to large, unsegmented lists. You simply select the list on the <strong>Lists</strong> tab of the campaign workflow. In this example we have put the segmented list in a category too.
+</p>
+<p><img src="static/send_to_segment.png" alt="sending to a segment" height="281" width="600"/>&#160;
+</p>
+<h2>Excluding a list
+</h2>
+<p>If you are sending a lot of mails and there is a chance that subscribers are in multiple segments and receiving lots of campaigns, you could consider using the exclude list functionality.
+</p>
+<p>For example, if Ethical Pets wants to send a campaign to a list of cat product purchasers just a few days after they sent the email to dog product purchasers, they could exclude anyone on the dog list from receiving the cat related campaign.
+</p>
+<p>While this involves prioritising which campaign is most important, the dog or the cat one, it means that the people who buy both dog and cat products are not receiving too many campaigns in total.
+</p>
+<h3>Activate the list exclude feature&#160;
+</h3>
+<p>You need to use&#160;
+</p>
+<p>define("USE_LIST_EXCLUDE",1);
+  <br/></p>
+<p>in your config.php
+</p>
+<p><img src="static/exclude_lists.png" alt="enable exclude list feature in config.php" height="299" width="558"/>&#160;
+</p>
+<p>The line of code and comments can be found in the extended config and copied over. If you do not know how to do this, you can find more information in the manual installation chapter.
+</p>
+<h3>Using the list exclude feature
+</h3>
+<p>In this example, Ethical Pets have sent an email to the cat product purchasers segment but excluded the dog purchasers segment. During sending phpList checks if the subscriber on the cat list is also on the dog list, and if they are, the email is not sent to them.
+</p>
+<p><img src="static/exclude_lists_2.png" alt="using the exclude list functionality phpList" height="602" width="600"/>&#160;
+</p>
+<p><span>Additional ways to segment a list</span>
+</p>
+<div>
+  <p>Here are a few ideas for ways you could segment your lists:
+  </p>
+  <p>
+  </p>
+  <ul><li>Subscriber location</li>
+    <li>Subscriber interests</li>
+    <li>Subscriber demographic (gender, age, shoe size etc)</li>
+    <li>Subscriber actions (purchase, abandoned cart, signed petition, recent comment etc)</li>
+    <li>Subscriber status (new to list, long-time member)</li>
+    <li>Subscriber preference: ask your subscribers how often or when they would like to receive emails from you using an attribute on your subscribe page.</li>
+  </ul><p>
+  </p>
+  <h2>Additional benefits of segmentation&#160;
+  </h2>
+  <p>There are many benefits to list segmentation:
+  </p>
+  <p>
+  </p>
+  <ul><li>You can a/b test aspects of your email, for example the tone/style/grammar of the subject line</li>
+    <li>You can automate transactional messages, for example, messages offering help to customers who abandoned a cart. You can use a recurring campaign for this.</li>
+    <li>You can tailor very specific emails, for example about events, to those who live in the location of those events.</li>
+  </ul><p>&#160;
+  </p>
+  <div>
+    <p>&#160;
+    </p>
+  </div>
+  <p>
+  </p>
+</div>
+<p>
+</p></body></html>
