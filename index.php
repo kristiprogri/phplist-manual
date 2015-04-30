@@ -42,7 +42,7 @@ $contents = str_replace('</body></html>','',$contents);
 
 $contents = str_replace('/phplist/_edit/','',$contents);
 
-$header = str_replace('[TITLE]',$title,$header);
+$header = str_ireplace('[TITLE]',$title,$header);
 
 print $header;
 print "<nav id='menu' role='navigation'>\n";
