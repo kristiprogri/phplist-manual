@@ -5,28 +5,28 @@
 </h1>
 <p>In the campaign workflow you will find the scheduling tab.
 </p>
-<p> If you want to send a campaign straight away, and it there is need to stop sending before a specific time, then you can leave these details unchanged and your campaign will simply send.
+<p> If you want to send a campaign straight away, and there is no need to stop sending before a specific time, then you can leave these details unchanged and your campaign will simply send.
 </p>
-<p>If your needs are more complex, then read on.
+<p>If your needs are more complex, read on.
 </p>
 <p><strong>Important information&#160;</strong>
 </p>
-<p> These settings interact with your sending method. If you are only able to process your queue from within the browser, because you have no cron or command-line access, then you the embargo time feature will not work for you. To send a campaign from the browser you must <em>always</em> open your browser to process the queue and keep it open till you have finished, even if you have used an embargo time this will be the case.
+<p> Scheduling settings interact with your sending method. If you are only able to process your queue from within the browser because you have no cron or command-line access, then the embargo time feature will not work for you. To send a campaign from the browser you must <em>always</em> open your browser to process the queue and keep it open until you have finished, even if you have used an embargo time.
 </p>
 <h2>Scheduling tab
 </h2>
-<p>Below is an image of the scheduling tab, we we will work though the information from the top to the bottom in order.
+<p>Below is an image of the scheduling tab. We we will work though it from top to bottom:
 </p>
 <h2><img src="/phplist/_edit/static/main.png" alt=""/></h2>
 <h2>Server time&#160;
 </h2>
-<p>The server time may not be the same as your local time. All of the times in the scheduling page are relative to the server time. Changing this time is an advanced feature.&#160;
+<p>The server time may not be the same as your local time. All of the times in the scheduling page are relative to server time. Changing this time is an advanced feature.&#160;
 </p>
 <h2>Embargoed until
 </h2>
 <p>The campaign will not be sent until this time has passed. If you have a campaign which you wish to send at a later date, perhaps when you out of the office or away from your desk, then this is the feature you should use.
 </p>
-<p>Embargo time is initially set to the nearest hour&#160;<em>before</em>&#160;you started your new campaign: this effectively switches off the embargo feature off by default. To use the feature you must set the time in the future.&#160;Simply set the date and time to the time you want to send, relative to your server time which is stated above. Then place the campaign in the queue as normal. If you are using a cron job then the campaign will automatically start sending at the desired time.
+<p>Embargo time is initially set to the nearest hour&#160;<em>before</em>&#160;you started your new campaign: this effectively switches off the embargo feature by default. To use the feature you must set the time in the future.&#160;Simply set the date and time to the time you want to send, relative to your server time which is stated above. Then place the campaign in the queue as normal. If you are using a cron job then the campaign will automatically start sending at the desired time.
 </p>
 <p><img src="static/change_embargo_time.png" alt=""/>&#160;
 </p>
@@ -40,7 +40,7 @@
 </p>
 <p><span>Re-Queue</span>
 </p>
-<p>The re-queue setting is used to send a campaign to subscriber who join a list <em>after</em> the campaign is sent. Remember, a campaign will never be sent to the same subscriber twice.
+<p>The re-queue setting is used to send a campaign to subscribers who join a list <em>after</em> the campaign is sent. Remember, a campaign will never be sent to the same subscriber twice.
 </p>
 <p><img src="/phplist/_edit/static/re-queue.png" alt=""/></p>
 <p>&#160;

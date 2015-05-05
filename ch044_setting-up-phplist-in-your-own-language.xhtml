@@ -3,4 +3,54 @@
     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Setting up phpList in your own language
 </h1>
-<p>There are two "faces" of a phpList install, which can be set up in different languages:</p><p/><ul><li>What the administrators see, when sending campaigns for example.</li><li>What subscribers, or potential subscribers, see, for example subscribe pages.</li></ul><h2>Changing language in the administrator interface</h2><p>At all times, including before login, there is a language selector on the right hand side of your phpList. This sets the language of the administrator interface and is set to English by default.</p><p><img src="static/admin_lang_1.png" alt=""/>&#160;</p><p>To change this simply select your preferred language from the drop down.&#160;</p><p><img src="static/admin_lang_2.png" alt=""/>&#160;</p><p>If this is the first time you have used the language this will take a little time:</p><p><img src="static/admin_lang_3.png" alt=""/>&#160;</p><p>The phpList interface will then be displayed in your language to the fullest extent possible: if there are some words missing or incorrectly translated, you can improve the translation.</p><h2>Public/Subscriber facing language</h2><p>You can set a default language for all subscriber facing pages, and/or set the language of each subscribe page on a case-by-case basis/</p><p>If all of your subscribers are likely to speak the same language, for example, German, then you can set German to be the default language for subscribe pages. Then, each new page you create will be in German by default.</p><h3>Default Subscriber facing language</h3><p>DAVID TO COMPLETE - step by step with screenshots.&#160;</p><ul/><p>Change english.inc to your language file. This file is found in lists/texts/.&#160;</p><p><br/>The change is made in lists/config/config.php, right at the beginning of the file.<br/>&#160;# select the language module to use&#160;<br/># Look for &lt;country&gt;.inc files in the texts directory&#160;<br/># to find your language&#160;<br/># this is the language for the frontend pages.&#160;<br/>$language_module = "english.inc";</p><p><br/></p><p><span>Subscribe pages&#160;</span></p><p>If you send campaigns in more than one language then you can set a different subscribe page for each language manually. </p><p>When you create a new Subscribe Page you can choose the display language from the dropdown menu.</p><p><img src="static/admin_lang_5.png" alt=""/>&#160;</p><p>We suggest you name your list and the subscribe page, for example, "Newsletter - in Danish" to help keep your pages and lists organised.</p><ul/><p><br/></p></body></html>
+<p>There are two "faces" of a phpList install, which can be set up in different languages:
+</p>
+<p>
+</p>
+<ul><li>What the administrators see, when sending campaigns for example.</li>
+  <li>What subscribers, or potential subscribers, see, for example subscribe pages.</li>
+</ul><h2>Changing language in the administrator interface
+</h2>
+<p>At all times, including before login, there is a language selector on the right hand side of your phpList. This sets the language of the administrator interface and is set to English by default.
+</p>
+<p><img src="static/admin_lang_1.png" alt=""/>&#160;
+</p>
+<p>To change this simply select your preferred language from the drop down.&#160;
+</p>
+<p><img src="static/admin_lang_2.png" alt=""/>&#160;
+</p>
+<p>If this is the first time you have used the language this will take a little time:
+</p>
+<p><img src="static/admin_lang_3.png" alt=""/>&#160;
+</p>
+<p>The phpList interface will then be displayed in your language to the fullest extent possible: if there are some words missing or incorrectly translated, you can improve the translation.
+</p>
+<h2>Public/Subscriber facing language
+</h2>
+<p>You can set a default language for all subscriber facing pages, and/or set the language of each subscribe page on a case by case basis.
+</p>
+<p>If all of your subscribers are likely to speak the same language, for example, German, then you can set German to be the default language for subscribe pages. Then each new page you create will be in German by default.
+</p>
+<h3>Default Subscriber facing language
+</h3>
+<p>To change the default language for all subscribe pages, change english.inc to your language file. This file is found in lists/texts/.&#160;
+</p>
+<p>The change is made in lists/config/config.php, right at the beginning of the file.
+  <br/>&#160;# select the language module to use&#160;
+  <br/># Look for &lt;country&gt;.inc files in the texts directory&#160;
+  <br/># to find your language&#160;
+  <br/># this is the language for the frontend pages
+  <br/>$language_module = "english.inc";
+</p>
+<p><span>Subscribe pages&#160;</span>
+</p>
+<p>If you send campaigns in more than one language then you can set a different subscribe page for each language manually.
+</p>
+<p>When you create a new Subscribe Page you can choose the display language from the dropdown menu.
+</p>
+<p><img src="static/admin_lang_5.png" alt=""/>&#160;
+</p>
+<p>We suggest you name your list and the subscribe page, for example, "Newsletter - in Danish" to help keep your pages and lists organised.
+</p>
+<ul/><p>
+  <br/></p></body></html>
