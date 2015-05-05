@@ -30,6 +30,7 @@ $footer = file_get_contents(dirname(__FILE__).'/'.$footerFile);
 
 $file = $_SERVER['REQUEST_URI'];
 $file = basename($file);
+$file = str_replace('?','',$file);
 if (is_file(dirname(__FILE__).'/'.$file)) {
   $contents = file_get_contents(dirname(__FILE__).'/'.$file);
   if (preg_match('/^ch(\d+)_(.*)\.xhtml$/',$file, $regs)) {
