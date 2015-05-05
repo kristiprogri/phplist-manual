@@ -40,7 +40,17 @@ if (is_file(dirname(__FILE__).'/'.$file)) {
     $chapterTitle = ucfirst($chapterTitle);
     $chapterTitle = str_ireplace('phplist','phpList',$chapterTitle);
   }
-} 
+} else {
+  $contents = '<ul>
+  <li><a href="ch001_system-overview.xhtml">Read Online</a></li>
+  <li><a href="phpList_manual_20150505.epub">Download as ePub</a></li>
+  <li><a href="phpList_manual_20150505.pdf">Download as PDF</a></li>
+  
+  </ul>
+  ';
+}
+  
+  
 if (!empty($chapter)) {
   $title = sprintf('chapter %d - %s',$chapter,htmlspecialchars($chapterTitle));
 }
