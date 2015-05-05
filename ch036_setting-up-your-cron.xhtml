@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Setting up your Cron.
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Setting up your Cron
 </h1>
-<h2>What is cron.
+<h2>What is cron
 </h2>
 <p> Cron is a time based task scheduler on Unix-like operating systems. For more information check the <a title="Explanation of CRON" target="_blank" href="http://en.wikipedia.org/wiki/Cron">Wikipedia page</a>. This chapter will describe how to set this up on Linux. On other Unix systems the set up will be similar.
   <br/></p>
-<h2>Why set up cron.
+<h2>Why set up cron
 </h2>
-<p>When you set up the cron, two of the most time-consuming parts of phpList will become automated. These are processing the queue and processing the bounces. Once you set up the cron, you will not have to do these in your browser, but they will happen automatically. Sending a campaign will become as easy as sending a normal email from your desktop.
+<p>When you set up the cron, two of the most time consuming parts of phpList will become automated. These are processing the queue and processing the bounces. Once you set up the cron, you will not have to do these in your browser, but they will happen automatically. Sending a campaign will become as easy as sending a normal email from your desktop.
 </p>
-<h2>Caveats.
+<h2>Caveats
 </h2>
-<p>The method described in this chapter requires the CLI version of PHP.&#160; This may not be available on all systems. There are some "hacks" to make it work with other versions of PHP, but this is non-intentional functionality and therefore not described here. Future developments are planned to make this work better. Once those developments have been implemented, the documentation will be updated.
+<p>The method described in this chapter requires the CLI version of PHP.&#160; This may not be available on all systems. There are some "hacks" to make it work with other versions of PHP, but this is non-intentional functionality and therefore not described here.
   <br/></p>
 <h2> Step 1: set up commandline
 </h2>
-<p>The easiest way to set up the cron, is to start with setting up a commandline script that will handle all commands that phpList can handle. There is an example in the "bin" directory in the phpList archive file.
+<p>The easiest way to set up the cron is to set up a commandline script that will handle all phpList commands. There is an example in the "bin" directory in the phpList archive file.
 </p>
 <p>Let's call the commandline script "phplist" and edit it with your favourite text editor:
 </p>
@@ -31,7 +31,7 @@
 </p>
 <p><strong>#!/bin/bash</strong> -&gt; the shell that you want to use
 </p>
-<p><strong>/usr/bin/php</strong> -&gt; the path to the PHP-cli commandline interpreter this can vary per system. Debian based systems (including Ubuntu) should install the "php-cli" package.
+<p><strong>/usr/bin/php</strong> -&gt; the path to the PHP-cli commandline interpreter, this can vary per system. Debian based systems (including Ubuntu) should install the "php-cli" package.
 </p>
 <p><strong>/home/website/public_html/lists/admin/index.php</strong> -&gt; the path to your phpList installation, pointing to the index.php file in the admin directory of phpList
 </p>
@@ -39,13 +39,13 @@
 </p>
 <p><strong>/home/website/public_html/lists/config/config.php</strong> -&gt; the path to your config file
 </p>
-<p>Once you have constructed your commandline file, place it somewhere in your path, eg in /usr/local/bin and make it executable.
+<p>Once you have constructed your commandline file, place it somewhere in your path, e.g. in /usr/local/bin and make it executable.
   <br/></p>
 <pre>chmod 755 /usr/local/bin/phplist</pre>
 <p>&#160;From then on, you can process phpList on commandline, for example with
 </p>
 <pre><strong>phplist -pprocessqueue</strong></pre>
-<h2>Step 2: set up the crons.
+<h2>Step 2: set up the crons
 </h2>
 <p>Once you have the commandline script, you can set up the crons with your favourite cron editor. On Linux, you type "crontab -e" in order to edit your cron entries.
 </p>
@@ -55,7 +55,7 @@
 </p>
 <p>The example also discards any output, which you will want to do. You can always check the output by running the above commands manually from the shell-prompt.
   <br/></p>
-<h2>Step 3: tell phpList.
+<h2>Step 3: tell phpList
 </h2>
 <p>Once you've set up the cron and it is working, you can tell phpList and some links will disappear. Put the following two lines in your config file:
   <br/></p>

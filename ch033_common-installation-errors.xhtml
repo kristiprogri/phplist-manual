@@ -7,13 +7,13 @@
 </h2>
 <h2>Error 500:
   <br/></h2>
-<p>The .htaccess file must be present in the lists/ directory and must contain the line"DirectoryIndex index.php" this ensures phpList looks for index.php rather then the default index.htm(l).
+<p>The .htaccess file must be present in the lists/ directory and must contain the line "DirectoryIndex index.php" as this ensures phpList looks for index.php rather than the default index.htm(l).
 </p>
-<p>Also. because this file tries to be all things to all servers, if you get a Error 500 report when first running phpList the issue could be that there are any lines that start "php_value " they have a better than 50:50 chance of crashing your installation with the dreaded Error 500. In this case, either remove the lines completely, or add a hash "#" to the start of any lines beginning with php_value (so it would look like this&#160; #php_value) and resave the .htaccess file.
+<p>Also because this file tries to be all things to all servers, if you get an Error 500 report when first running phpList the issue could be that there are lines that start "php_value" they have a better than 50:50 chance of crashing your installation with the dreaded Error 500. In this case, either remove the lines completely, or add a hash "#" to the start of any lines beginning with php_value (so it would look like this&#160; #php_value) and resave the .htaccess file.
 </p>
 <h2> mySQLi error:
   <br/></h2>
-<p>If you receive an error referring to mySQL or mySQLi then you need to change this line "$database_module = "mysql.inc";" to this "$database_module = "mysqli.inc";" the line in question is around 700-710 of the full config.php file
+<p>If you receive an error referring to mySQL or mySQLi then you need to change this line "$database_module = "mysql.inc";" to "$database_module = "mysqli.inc";" the line in question is around 700-710 of the full config.php file
   <br/></p>
 <p>From version 5.5 of <acronym title="Hypertext Preprocessor">PHP</acronym>, the mysql_ functions have been deprecated.
 </p>
