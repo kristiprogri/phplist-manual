@@ -41,7 +41,10 @@ if (is_file(dirname(__FILE__).'/'.$file)) {
     $chapterTitle = str_ireplace('phplist','phpList',$chapterTitle);
   }
 } else {
-  $contents = '<ul>
+  $contents = '
+  
+  <h1>The phpList manual</h1>
+  <ul>
   <li><a href="ch001_system-overview.xhtml">Read Online</a></li>
   <li><a href="phpList_manual_20150505.epub">Download as ePub</a></li>
   <li><a href="phpList_manual_20150505.pdf">Download as PDF</a></li>
