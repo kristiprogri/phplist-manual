@@ -46,8 +46,9 @@ if (is_file(dirname(__FILE__).'/'.$file)) {
   <h1>The phpList manual</h1>
   <ul>
   <li><a href="ch001_system-overview.xhtml">Read Online</a></li>
-  <li><a href="phpList_manual_20150505.epub">Download as ePub</a></li>
-  <li><a href="phpList_manual_20150505.pdf">Download as PDF</a></li>
+  <li><a href="phpList_manual_20150506.epub">Download as ePub</a></li>
+  <li><a href="phpList_manual_pdf_20150506.pdf">Download as PDF</a></li>
+  <li><a href="phpList_manual_20150506.odt">Download in OpenDocument format</a></li>
   
   </ul>
   ';
