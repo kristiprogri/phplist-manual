@@ -44,13 +44,11 @@ if (is_file(dirname(__FILE__).'/'.$file)) {
   $contents = '
   
   <h1>The phpList manual</h1>
-  <ul>
-  <li><a href="ch001_system-overview.xhtml">Read Online</a></li>
-  <li><a href="phpList_manual_20150506.epub">Download as ePub</a></li>
-  <li><a href="phpList_manual_pdf_20150506.pdf">Download as PDF</a></li>
-  <li><a href="phpList_manual_20150506.odt">Download in OpenDocument format</a></li>
+  <a class="book" href="ch001_system-overview.xhtml"><span class="ics read"></span><span class="book-title">Read Online</span></a>
+  <a class="book" href="phpList_manual_20150506.epub"><span class="ics epub"></span><span class="book-title">Download as ePub</span></a>
+  <a class="book" href="phpList_manual_pdf_20150506.pdf"><span class="ics pdf"></span><span class="book-title">Download as PDF</span></a>
+  <a class="book" href="phpList_manual_20150506.odt"><span class="ics odt"></span><span class="book-title">Download in OpenDocument format</span></a>
   
-  </ul>
   ';
 }
   
