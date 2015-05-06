@@ -1,14 +1,14 @@
 <package xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="primary_id">
   <metadata>
     <dc:publisher>FLOSS Manuals http://flossmanuals.net</dc:publisher>
-    <dc:rights>GPLv2+</dc:rights>
+    <dc:rights>CC-BY-SA</dc:rights>
     <dc:language>en</dc:language>
     <dc:creator>The Contributors</dc:creator>
     <dc:title>phpList</dc:title>
     <dc:date opf:event="start">2014-07-15</dc:date>
     <dc:date opf:event="last-modified">2015-05-05</dc:date>
     <dc:date opf:event="published">2015-05-06</dc:date>
-    <dc:identifier id="primary_id">http://booki.flossmanuals.net/phplist/2015.05.06-00.13</dc:identifier>
+    <dc:identifier id="primary_id">http://booki.flossmanuals.net/phplist/2015.05.06-13.19</dc:identifier>
   </metadata>
   <manifest>
     <item href="static/list_9.png" id="att110_list_9" media-type="image/png"/>
