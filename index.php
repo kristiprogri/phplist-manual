@@ -71,6 +71,7 @@ $contents = str_replace('/phplist/_edit/','',$contents);
 $header = str_ireplace('[TITLE]',$title,$header);
 
 print $header;
+print "<a href='/manual' class='download'><big>&rarr;</big> DONWLOAD THIS MANUAL</a>\n";
 print "<nav id='menu' role='navigation'>\n";
 print $toc;
 print "</nav>\n";
