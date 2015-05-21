@@ -6,9 +6,9 @@
     <dc:creator>The Contributors</dc:creator>
     <dc:title>phpList</dc:title>
     <dc:date opf:event="start">2014-07-15</dc:date>
-    <dc:date opf:event="last-modified">2015-05-07</dc:date>
-    <dc:date opf:event="published">2015-05-07</dc:date>
-    <dc:identifier id="primary_id">http://booki.flossmanuals.net/phplist/2015.05.07-00.57</dc:identifier>
+    <dc:date opf:event="last-modified">2015-05-21</dc:date>
+    <dc:date opf:event="published">2015-05-21</dc:date>
+    <dc:identifier id="primary_id">http://booki.flossmanuals.net/phplist/2015.05.21-21.12</dc:identifier>
   </metadata>
   <manifest>
     <item href="static/list_9.png" id="att110_list_9" media-type="image/png"/>
