@@ -48,9 +48,9 @@ if (is_file(dirname(__FILE__).'/'.$file)) {
   <h1>The phpList manual</h1>
   <div class="intro">
   <a class="book" href="ch001_system-overview.xhtml"><span class="ics read"></span><span class="book-title">Read Online</span></a>
-  <a class="book" href="phpList_manual_20150521.epub"><span class="ics epub"></span><span class="book-title">Download as ePub</span></a>
-  <a class="book" href="phpList_manual_pdf_20150521.pdf"><span class="ics pdf"></span><span class="book-title">Download as PDF</span></a>
-  <a class="book" href="phpList_manual_20150521.odt"><span class="ics odt"></span><span class="book-title">Download in OpenDocument format</span></a>
+  <a class="book" href="phpList_manual_20150522.epub"><span class="ics epub"></span><span class="book-title">Download as ePub</span></a>
+  <a class="book" href="phpList_manual_pdf_20150522.pdf"><span class="ics pdf"></span><span class="book-title">Download as PDF</span></a>
+  <a class="book" href="phpList_manual_20150522.odt"><span class="ics odt"></span><span class="book-title">Download in OpenDocument format</span></a>
   </div>
   ';
 }
