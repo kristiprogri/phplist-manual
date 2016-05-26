@@ -40,7 +40,7 @@ if (is_file(dirname(__FILE__).'/'.$file)) {
     $chapterTitle = ucfirst($chapterTitle);
     $chapterTitle = str_ireplace('phplist','phpList',$chapterTitle);
   }
-  $header .=  "<a href='/manual' class='download'><big>&rarr;</big> DONWLOAD THIS MANUAL</a><div class='clear'></div>\n";
+  $header .=  "<a href='/manual' class='download'><big>&rarr;</big> DONWLOAD THIS MANUAL</a><div class='clear show-on-mobile'></div>\n";
 
 } else {
   $contents = '
