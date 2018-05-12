@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title />
+  </head>
+  <body>
+    <h1 id="using-phplist-for-compliance-with-the-gdpr">Using phpList for compliance with the GDPR</h1>
+    <p>This chapter provides an overview of features and functionality of phpList version 3.3.3 and higher, implemented for phpList administrators seeking to be compliant with the 
+    <a href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/">General Data Protection Regulation</a> in their data management practices.</p>
+    <p>The GDPR is a regulation in EU law which includes legal requirements for how the data of EU Citizens is handled, including the kind of data collected by installations of phpList. The laws affect all entities which handle such data 
+    <a href="https://gdpr-info.eu/art-3-gdpr/">regardless of where they are based</a>.</p>
+    <p>Ultimately it is the 
+    <a href="https://gdpr-info.eu/issues/data-protection-officer/">administrators of a given installation</a> of phpList who are responsible for managing data responsibly. The following technical features of phpList relate to common strategies for complying with the regulations as they stand.</p>
+    <p>
+    <strong>
+      <em>Note:</em>
+    </strong>GDPR is a comprehensive set of regulations which covers much more than just technical operation of the newsletter software that you use. For comprehensive information about entities responsibilities, consult the 
+    <a href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/">Information Commissioner’s Office</a>, the 
+    <a href="https://ec.europa.eu/info/law/law-topic/data-protection_en">European Commission website</a>, or independent legal advice.</p>
+    <p>
+    <strong>
+      <em>Note:</em>
+    </strong>Features which are not present in older versions are labelled (⇮phpList-3.3.3) for convenience.</p>
+    <h3 id="sensitive-data">Sensitive data</h3>
+    <p>The GDPR makes discinctions between different types of data and the protections they require.</p>
+    <ul>
+      <li>Do not store particularly 
+      <a href="https://gdpr-info.eu/art-9-gdpr/">sensitive data</a> within phpList (e.g.&#160;as user attributes). Examples of data in this category are data relating to medical history, sexuality, or ethnicity.</li>
+      <li>If children are not your target audience, add a required attribute to your subscribe pages and sign up forms for age confirmation</li>
+    </ul>
+    <h3 id="consent">Consent</h3>
+    <p>The GDPR requires that 
+    <a href="https://gdpr-info.eu/art-7-gdpr/">consent is obtained</a> from all subscribers, and defines how this consent must be aquired and managed.</p>
+    <ul>
+      <li>If your subscribers sign up to phpList directly using subscribe pages, widgets, or custom forms: 
+      <ul>
+        <li>Consider adding a required consent checkbox which links to your legal policies 
+        <ul>
+          <li>(⇮phpList-3.3.3) A Default Attribute exists for convenience which requires consent to the website Terms of Service - you can load it easily via the Config -&gt; Configure Attributes page</li>
+        </ul></li>
+        <li>Consider adding a comprehensive explanation of why, how, and for how long their data will be used, to either: 
+        <ul>
+          <li>The confirmation email message text which they automatically receive</li>
+          <li>The subscribe page or form which into which they initially add their details</li>
+        </ul></li>
+      </ul></li>
+      <li>Only import subscribers into phpList for which you have auditable evidence of adequate consent</li>
+      <li>Send 
+      <a href="https://www.econsultancy.com/blog/69966-gdpr-15-good-bad-examples-of-repermissioning-emails-campaigns">re-permission campaigns</a> using the 
+      <a href="https://resources.phplist.com/plugin/invite">Invite Plugin</a> to re-obtain consent from inactive subscribers 
+      <ul>
+        <li>(⇮phpList-3.3.3) The Invite Plugin is included with phpList by default but must be enabled on the Config -&gt; Manage Plugins page</li>
+        <li>(⇮phpList-3.3.3) A template re-permission campaign is included by default as a draft for easy use and reference</li>
+      </ul></li>
+      <li>Use the “Delete subscribers who signed up and have not confirmed their subscription” option on the Reconcile Subscribers page to remove subscribers who have not provided adequate consent</li>
+      <li>Use the “Delete all blacklisted subscribers” button on the Subscribers -&gt; Reconcile Subscribers page to delete all blacklisted subscribers, including those who were blacklisted due to consecutive bounces, and are therefore unreachable</li>
+      <li>(⇮phpList-3.3.3) Use the “Delete subscribers who are blacklisted because they unsubscribed” button on the Subscribers -&gt; Reconcile Subscribers page to delete all blacklisted subscribers who unsubscribed from your lists</li>
+    </ul>
+    <h3 id="right-of-access">Right of access</h3>
+    <p>The GDPR grants EU Citizens the 
+    <a href="https://gdpr-info.eu/art-15-gdpr/">right to access</a> the data you have which relates to them.</p>
+    <ul>
+      <li>Check that your Admin Email address (“Person in charge of this system”) is accurately set so that subscribers can 
+      <a href="https://gdpr-info.eu/issues/data-protection-officer/">contact you</a></li>
+      <li>(⇮phpList-3.3.3) When a subscriber requests their data, use the Data Export feature to download a report containing their data</li>
+      <li>If you store data about subscribers in third party applications (e.g.&#160;Wordpress or a CRM system), export and include that data for the subscriber in response to their request as well</li>
+    </ul>
+    <h3 id="right-to-rectification">Right to rectification</h3>
+    <p>The GDPR grants EU Citizens the 
+    <a href="https://gdpr-info.eu/art-16-gdpr/">right to update inaccurate data</a> which you store about them.</p>
+    <ul>
+      <li>Do not remove the preferences link placeholder within your campaigns to ensure easy access for subscribers</li>
+      <li>(⇮phpList-3.3.3) Refer them to your phpList installation homepage (
+      <code>http://your-domain.com/lists</code>by default) so they can find the preferences page if they don’t have a link</li>
+      <li>(⇮phpList-3.3.3) Use the Preferences Page button on a Subscriber Details page to obtain a personalised preferences page link for a subscriber directly</li>
+    </ul>
+    <h3 id="right-to-erasure">Right to erasure</h3>
+    <p>The GDPR grants EU Citizens the 
+    <a href="https://gdpr-info.eu/art-17-gdpr/">right to have their data erased</a>.</p>
+    <ul>
+      <li>Use the Remove Subscriber button on the Subscriber Details page if a subscriber requests that their data is erased</li>
+    </ul>
+  </body>
+</html>
