@@ -33,6 +33,12 @@
         </navLabel>
         <content src="ch003_about-this-manual.xhtml"/>
       </navPoint>
+      <navPoint id="chapter48" playOrder="3">
+        <navLabel>
+          <text>GDPR</text>
+        </navLabel>
+        <content src="ch048_gdpr.xhtml"/>
+      </navPoint>
     </navPoint>
     <navPoint id="chapter4" playOrder="4">
       <navLabel>
