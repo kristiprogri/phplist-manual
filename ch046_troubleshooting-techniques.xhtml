@@ -3,25 +3,45 @@
     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head><title/></head><body><h1>Troubleshooting Techniques
 </h1>
-<p>This chapter gives you some hints on how to troubleshoot a problem in phpList.&#160;
-</p>
-<h2> Where to go first
-</h2>
-<p>The first place to go for help is <a href="https://phplist.org">phpList.org</a>, especially <a href="https://phplist.org/users">phpList.org/users</a> - this page has the most up-to-date list of support resources and will guide you through the process of getting help step by step.
-</p>
-<h2>Describing your problem
-</h2>
-<p>One of the biggest barriers to problem solving is being able to describe the problem clearly and in enough detail. There is a useful article <a href="http://community.phplist.com/how-to-get-help-on-the-forums/">here</a> to help you with that - it's especially worth a read if you are "not very technical".
-</p>
-<h2>If you have an error message
-</h2>
-<p>If you have an error message, try pasting it into a search engine. All our forums and documentation are fully indexed by search engines, and your solution is likely to pop up in the results.
-</p>
-<h2>Don't give up!
-</h2>
-<p> If you have a problem that is hard to solve, it could be a "bug." In this case, take a look at the bug reporting process described on the community site - our developer team may be able to fix your problem in the next version.
-</p>
-<h2>Feedback
-</h2>
-<p>Discuss this chapter <a href="https://discuss.phplist.org/t/troubleshooting-techniques-manual-chapter-feedback-and-discussion/234">here</a>.
-</p></body></html>
+<p>This chapter gives you some hints on how to troubleshoot a problem in phpList.&#160;</p>
+
+<h2> Where to go first</h2>
+<p>The first place to go for help is <a href="https://phpList.org">phpList.org</a>, especially <a href="https://phpList.org/users">phpList.org/users</a> - this page has the most up-to-date list of support resources and will guide you through the process of getting help step by step.</p>
+
+<h2>Describing your problem</h2>
+<p>One of the biggest barriers to problem solving is being able to describe the problem clearly and in enough detail. There is a useful article <a href="http://community.phpList.com/how-to-get-help-on-the-forums/">here</a> to help you with that - it's especially worth a read if you are "not very technical".</p>
+
+<h2>Enable error reporting</h2>
+<p>By default phpList has error reporting disabled. This behaviour will even suppress errors and exceptions from appearing in your web server's logs.</p>
+
+<p>To enable error reporting, change:</p>
+
+<blockquote><code>
+error_reporting(0)
+</code></blockquote>
+
+<p>to</p>
+
+<blockquote><code>
+error_reporting(1)
+</code></blockquote>
+
+<p>in the following files:</p>
+
+<ol>
+<li>public_html/lists/admin/index.php</li>
+<li>public_html/lists/admin/init.php</li>
+</ol>
+
+<h2>If you have an error message</h2>
+<p>If you have an error message, try pasting it into a search engine. All our forums and documentation are fully indexed by search engines, and your solution is likely to pop up in the results.</p>
+
+<h2>Don't give up!</h2>
+
+<p>If you have a problem that is hard to solve, it could be a "bug." In this case, take a look at the bug reporting process described on the community site - our developer team may be able to fix your problem in the next version.</p>
+
+<h2>Feedback</h2>
+<p>Discuss this chapter <a href="https://discuss.phpList.org/t/troubleshooting-techniques-manual-chapter-feedback-and-discussion/234">here</a>.</p>
+
+</body>
+</html>
