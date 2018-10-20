@@ -1,22 +1,12 @@
-epub2html
-=========
 
-Convert ePub to HTML
+# phpList User Manual
 
-This simple PHP script will take an ePub file and allow publishing it as a browseable set of pages.
+Files for the phpList user manual which is viewable at https://www.phplist.org/manual/. 
 
-To install:
+The manual consists of flat xhtml files which can be edited in any text or code editor to update and improve content.
 
-Assuming the location of the ePub on a website in /manual/
+It is recommended to view this manual locally, for example via a simple local webserver, to check how they render in a Web browser before committing. 
 
-1. Add the following to the Apache VHOST (assuming Mod Rewrite is available)
+Currently changes to this repository are periodically manually deployed to the public website, and commits are not deployed automatically. 
 
-  RewriteRule ^/manual/(.*).xhtml /manual/index.php/$1 [PT]
-
-2. Download the ePub file in the manual directory and type "unzip file.epub"
-
-Browse to http://www.website.com/manual/
-
-For formatting, update the header.html and footer.html. The current ones are for phpList.
-
-
+PDF and epub versions of the manual are not automatically updated, this process is done separately via manual execution of scripts. 
