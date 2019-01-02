@@ -13,6 +13,7 @@
   <li>Download phpList</li>
   <li>Unzip phpList</li>
   <li>Upload to your server using FTP</li>
+  <li>Local Windows installation</li>
   <li>Create a database</li>
   <li>Add the database details to the config.php file</li>
   <li>Configure using web interface.</li>
@@ -29,7 +30,7 @@
 <p> Once you have downloaded phpList to your computer, unpack it to a temporary folder. You can usually do this by right clicking and choosing <strong>Extract Here</strong> (Linux, as in screenshot), double clicking the folder (mac) or right click "extract all" (Windows).
 </p>
 <p><img alt="extracting phpList install using geddit on Linux" src="static/phpList_extract_here.png" height="503" width="560"/></p>
-<h2>Upload to your server using ftp
+<h2>Upload to your server using FTP
 </h2>
 <p>Start your favourite FTP program, in this case we are using FileZilla.
 </p>
@@ -48,9 +49,19 @@
 </p>
 <p>
 </p>
+<h2>Local Windows installation
+  <br/></h2>
+<p> If you do not own a server or you want to develop locally, you can also install phpList on your Windows machine. First, you need to download the <a href="https://www.apachefriends.org/index.html" target="_blank">XAMPP</a> package and install it in your PC. After installing, copy the /lists folder as stated in the previous section and paste it in the public_hmtl folder of XAMPP.
+</p>
+<p><img alt="moving lists folder to xampp folder" src="static/xampp_installation.png" height="" width=""/>&#160;
+</p>
+<p> Next up, you must run the XAMPP Control Panel and start the Apache and MySQL server. Now we are ready to create a database for phpList on which to save the data.
+</p>
+<p><img alt="starting servers" src="static/xampp_control_panel.png" height="" width=""/>&#160;
+</p>
 <h2>Create a database using your control panel
   <br/></h2>
-<p> Once you have uploaded the<strong> /lists</strong> directory, go to your hosting control panel and create a database. If you need help, your web hosting company can help you with this.
+<p> Once you have uploaded the<strong> /lists</strong> directory, go to your hosting control panel or to the localhost from your browser and create a database. If you need help, your web hosting company can help you with this.
 </p>
 <p>Whatever the process, you will always end up with three things:
 </p>
